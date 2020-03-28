@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>latex教学</title>
+      <link href="/2020/03/28/latex-jiao-xue/"/>
+      <url>/2020/03/28/latex-jiao-xue/</url>
+      
+        <content type="html"><![CDATA[<p>LateX作为常用的排版输入数学公式的工具，可以帮助提高效率。这个文档能帮助你快速解决一些问题。 <a id="more"></a></p><h1 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h1><p>在开始简单的学习之前，几条如下的法则可以帮助你减少一些弯路。 </p><p><strong>第一：</strong></p><blockquote><p>如果是特殊符号，我们需要反斜杠来表示，比如a可以用键盘打出来，而圆周率就需要用\pi表示。</p></blockquote><p><strong>第二：</strong></p><blockquote><p>我们使用＄来框住数学符号,也可是$$,分别代表行内和行间公式。</p></blockquote><h1 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h1><h2 id="行内公式，行间公式"><a href="#行内公式，行间公式" class="headerlink" title="行内公式，行间公式"></a>行内公式，行间公式</h2><p>（1）要输入类似$a+b$的行内数学公式，你可以使用</p><pre><code class="latex">$a+b$</code></pre><p>（ 2）如果要输入这样的行间公式<br>$$<br>e^{i\pi}+1=0<br>$$<br>你就需要</p><pre><code class="latex">$$e^{i\pi}+1=0$$</code></pre><p>或者</p><pre><code class="latex">$$e^{i\pi}+1=0$$</code></pre><p>两者并没有什么区别，主要是前一种更方便修改。 你可能暂时看不懂的Latex表达方式，<strong>这并没有关系</strong>，下面我们来识记几个常见的Latex数学符号。</p><h2 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h2><h3 id="上标与下标"><a href="#上标与下标" class="headerlink" title="上标与下标"></a>上标与下标</h3><p>上标的符号是,比如$e^2$的行间公式就可以使用</p><pre><code class="latex">$e^2$ 或者 $e^{2}$</code></pre><p>下标的符号是_,比如$x_{1}$的表达方式就是</p><pre><code class="latex">$x_1$ 或者 $x_{1}$</code></pre><h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><pre><code class="latex">\frac{}{}</code></pre><p>比如 $\frac{|f(b)-f(a)|}{(b-a)^{2}}$就可以通过</p><pre><code class="latex">$\frac{|f(b)-f(a)|}{(b-a)^{2}}$</code></pre><p>来表达。</p><h3 id="根号"><a href="#根号" class="headerlink" title="根号"></a>根号</h3><pre><code class="latex">\sqrt[开方次数，如不写默认为2]{根号里面的数}</code></pre><p>比如</p><pre><code>\sqrt[3]{x^4}+\sqrt{\frac{x^2}{y}}</code></pre><p>$$\sqrt[3]{x^4}+\sqrt{\frac{x^2}{y}}$$</p><h2 id="其他常用符号"><a href="#其他常用符号" class="headerlink" title="其他常用符号"></a>其他常用符号</h2><table><thead><tr><th align="left">符号</th><th align="left">Latex语言</th></tr></thead><tbody><tr><td align="left">·</td><td align="left">\cdot</td></tr><tr><td align="left"></td><td align="left">\tbinom{n}{m} or</td></tr><tr><td align="left"></td><td align="left">C_{n}^{m}</td></tr><tr><td align="left"></td><td align="left">\geq</td></tr><tr><td align="left"></td><td align="left">\leq</td></tr><tr><td align="left"></td><td align="left">\sum</td></tr><tr><td align="left"></td><td align="left">\int</td></tr><tr><td align="left"></td><td align="left">\lim</td></tr><tr><td align="left"></td><td align="left">\infty</td></tr><tr><td align="left"></td><td align="left">\because</td></tr><tr><td align="left"></td><td align="left">\therefore</td></tr><tr><td align="left"></td><td align="left">\vec{a}</td></tr></tbody></table><h2 id="微积分几大天王"><a href="#微积分几大天王" class="headerlink" title="微积分几大天王"></a>微积分几大天王</h2><pre><code class="latex">$\sum_{i=0}^n \frac{1}{i^2}$ $\prod_{i=0}^n \frac{1}{i^2}$ $\int_0^1 x^2  dx$ $\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$</code></pre><p>$\sum_{i=0}^n \frac{1}{i^2}$ </p><p>$\prod_{i=0}^n \frac{1}{i^2}$<br>$\int_0^1 x^2  dx$<br>$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$</p><h2 id="字体格式"><a href="#字体格式" class="headerlink" title="字体格式"></a>字体格式</h2><pre><code>\emph{这是斜体}\textbf{这是粗体}</code></pre><h2 id="空格怎么打？"><a href="#空格怎么打？" class="headerlink" title="空格怎么打？"></a>空格怎么打？</h2><table><thead><tr><th align="left">符号</th><th align="left">Latex语言</th></tr></thead><tbody><tr><td align="left"></td><td align="left">a\ b(<strong>注：反斜杠后面需要空开一格</strong>)</td></tr><tr><td align="left"></td><td align="left">a!b</td></tr><tr><td align="left"></td><td align="left">a\quad b</td></tr><tr><td align="left"></td><td align="left">a\ ; b</td></tr></tbody></table><h2 id="一些特殊字母"><a href="#一些特殊字母" class="headerlink" title="一些特殊字母"></a>一些特殊字母</h2><table><thead><tr><th align="left">符号</th><th align="left">Latex语言</th></tr></thead><tbody><tr><td align="left"></td><td align="left">\alpha</td></tr><tr><td align="left"></td><td align="left">\beta</td></tr><tr><td align="left"></td><td align="left">\gamma</td></tr><tr><td align="left"></td><td align="left">\mu</td></tr><tr><td align="left"></td><td align="left">\lambda</td></tr><tr><td align="left"></td><td align="left">\xi</td></tr></tbody></table><h2 id="特殊环境"><a href="#特殊环境" class="headerlink" title="特殊环境"></a>特殊环境</h2><h3 id="对齐环境"><a href="#对齐环境" class="headerlink" title="对齐环境"></a>对齐环境</h3><pre><code class="latex">$$ \begin{aligned} x =&amp; a+b+c \\= &amp;d+e+f+g \end{aligned} $$</code></pre><h1 id="如何使用latex插图"><a href="#如何使用latex插图" class="headerlink" title="如何使用latex插图"></a>如何使用latex插图</h1><h2 id="单图"><a href="#单图" class="headerlink" title="单图"></a>单图</h2><pre><code class="latex">\begin{figure}[h] %---插入图片---  \small  \centering  \includegraphics[width=0.6\textwidth]{s.png}  \caption{Definition} \label{pic1} %---\end{figure}</code></pre><h2 id="多图"><a href="#多图" class="headerlink" title="多图"></a>多图</h2><pre><code class="latex">\begin{figure}    \centering    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}     \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}     \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}    \caption{(a) blah (b) blah (c) blah (d) blah}    \label{fig:foobar}\end{figure}</code></pre><h1 id="如何插入灰白相间的表格"><a href="#如何插入灰白相间的表格" class="headerlink" title="如何插入灰白相间的表格"></a>如何插入灰白相间的表格</h1><p>使用命令：</p><blockquote><p>\rowcolor[gray]{.95}  </p></blockquote><pre><code class="latex">\begin{table}[h] %---开始表格---  \caption{Symbols mentioned in this paper}\label{tab:001}  \centering  \begin{tabular}{lll}  \toprule[1.2pt] %%%---表头高度----  \bf{Symbols} &amp; \bf{Description}\\ %-----一共三列----  \midrule[1pt] %%%---上横线线粗----  \rowcolor[gray]{.95}  $F$ &amp; Customer  level.\\  $Q_{1}$ &amp; Ratings\\ \rowcolor[gray]{.95}  \bottomrule[1.5pt] %%%---下横线线粗----  \end{tabular}  \end{table}</code></pre><h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><p>需要生成目录与段落，首先输入显示目录命令，其次输入段落。</p><pre><code class="latex">\tableofcontents\section{Dream}\subsection{section1}\subsubsection*{conclusion}% *代表不编号</code></pre><h1 id="使用中文"><a href="#使用中文" class="headerlink" title="使用中文"></a>使用中文</h1><p>如果你的文章主要由中文构成，你可以考虑使用 CTeX 中的  <code>ctexart</code>  文档类，下面的例子展示了如何使用  <code>ctexart</code>  文档类来写中文文档：</p><pre><code class="latex">\documentclass[UTF8]{ctexart}\begin{document}你好，这是一个测试文档。\end{document}</code></pre><p>使用  <code>ctexart</code>  documentclass 时候，最好加上  <code>\usepackage[T1]{fontenc}</code>，否则[某些符号显示不正确</p><pre><code>\usepackage[UTF8]{ctex}</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> latex </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>教学的艺术</title>
+      <link href="/2020/03/04/jiao-xue-de-yi-zhu/"/>
+      <url>/2020/03/04/jiao-xue-de-yi-zhu/</url>
+      
+        <content type="html"><![CDATA[<p>不止是教师，每个人或多或少都有着一定的教学任务。比如父母教小孩子走路，骑自行车；小孩教父母用微信付钱，买理财产品；同学之间互相传道授业，这些都是教学的实践体现。以下，我为大家分享一些教学中的经验。</p><p>教学不止是教师的任务，每个人或多或少都有着一定的教学任务。比如父母教小孩子走路，骑自行车；小孩教父母用微信付钱，买理财产品；同学之间互相传道授业，这些都是教学的实践体现。以下，我为大家分享一些教学中的经验。<a id="more"></a></p><h1 id="先验知识"><a href="#先验知识" class="headerlink" title="先验知识"></a>先验知识</h1><p>不知道你是否有这样一种经历，在做英语阅读理解，会遇到一些小众的，只有你知道的一些食物，你理解期来这篇文章就来的更加容易。</p><p>或者学习一些之前学过一点，而你的同学不怎么了解的事物时，你往往会比他们更快，更容易地理解这项知识。</p><p>那么，如果让所有同学都知道这样的先验知识，我们就会更容易的讲解一个知识。</p><h1 id="放大模糊之处"><a href="#放大模糊之处" class="headerlink" title="放大模糊之处"></a>放大模糊之处</h1><p>记得我在学习普通商品，奢侈品，吉芬商品的供需曲线移动时，总是画不出那样的效果。</p><p>后来看了Youtube上一个老师怎么画的，她拿了一张很大的纸进行作图，并将其中最关键，曲线与直线交错的地方，单独提取出来，放大的画一遍。</p><p>我觉得这也是一个小技巧，主动提及学生可能产生的模糊之处，解决掉可能产生的疑惑，这样就起到了老师的作用。</p><p>当然，也可以指望着学生的自我学习能力，但是会浪费学生的一些时间，他们本可以去更好的学习下一个知识了。</p><h1 id="设立几条最初的principle"><a href="#设立几条最初的principle" class="headerlink" title="设立几条最初的principle"></a>设立几条最初的principle</h1><p>在教别人骑自行车时，你不会一上来就告诉他所有骑车的技巧，只是给他设立几个原则，让他按照这几条原则去尝试。</p><p>未来，他在之后学习的所有的技巧，都必须基于这些principle.</p><p>如果重点太多，学习者也会抓不住重点。</p><h1 id="引导性问题，而非事实性问题"><a href="#引导性问题，而非事实性问题" class="headerlink" title="引导性问题，而非事实性问题"></a>引导性问题，而非事实性问题</h1><p>有些教师喜欢提问，但提的问题并不好。</p><p>比如说，讲述两件事物的逻辑关系时，问：</p><blockquote><p>这个东西下跌了，另一个是下跌了还是上涨了。</p></blockquote><p><strong>这样的问题并不好</strong>，因为他有一个基定的事实答案，即，不用思考的学生也能回答出来。或者说，那些真正在思考的学生，不懂为什么上涨的学生，这样粗暴的问题，会让他们失去探索的兴趣。</p><p>所以，不妨提一些没有答案的，开放性，具有迷惑性的问题，让每个人心中都有自己的答案，然后与他们探讨，这样的问题才是更好的问题。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>还是提一句之前提过的</p><blockquote><p>一个好老师能让一个人对学科产生最初始的兴趣。</p></blockquote><p>所以，老师们除了陶冶自身的知识，也应注意教学的艺术。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所思所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>伊藤引理的推导过程</title>
+      <link href="/2020/02/28/yi-teng-yin-li-de-tui-dao-guo-cheng/"/>
+      <url>/2020/02/28/yi-teng-yin-li-de-tui-dao-guo-cheng/</url>
+      
+        <content type="html"><![CDATA[<p> 伊藤引理帮助求解随机过程下函数的微分，其数学推导比较复杂。<br>应用于金融数学中的随机过程，尤其是BHM公式的推导。</p><a id="more"></a><p>在学习之前，我们需要回顾两个知识:<strong>泰勒公式与随机过程</strong>。</p><h1 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h1><p>在高数课本中，我们知道<br>$$<br>\underbrace{f(s+d s)=f(s)}+f^{\prime}(s) d s+\frac{1}{2} f^{\prime \prime}(s)(d s)^{2}+…<br>$$<br>将花括号的部分进行移项、相减，就得到：<br>$$<br>d_f=f^{\prime}(s) d s+\frac{1}{2} f^{\prime \prime}(s)(d s)^{2}+…<br>$$<br>这是一元下的情况。</p><h1 id="随机过程下的金融资产价格"><a href="#随机过程下的金融资产价格" class="headerlink" title="随机过程下的金融资产价格"></a>随机过程下的金融资产价格</h1><p>由于资产价格遵循几何布朗运动，而非普通布朗运动。<br>几何布朗运动的表达式是：<br>$$<br>\frac{dS}{S}=\mu  d t+\sigma  d x<br>$$<br>其中$\mu$比较小，波动性$\sigma$随机 .<br>稍作变化，得:<br>$$<br>ds=\mu S d t+\sigma S d x<br>$$</p><h1 id="伊藤引理"><a href="#伊藤引理" class="headerlink" title="伊藤引理"></a>伊藤引理</h1><p>由前面我们知道：<br>$$<br>d_f=f^{\prime}(s) d s+\frac{1}{2} f^{\prime \prime}(s)(d s)^{2}+…<br>$$<br>这是一元下的情形，如果我们将资产价格展开，他同时含有变量$x,t$。<br>类似的，我们先对$x,t$求一阶偏导,如下方花括号所示。<br>$$<br>d f=\underbrace{\frac{\partial f}{\partial s} \cdot d s+\frac{\partial f}{\partial t} d t}+\frac{1}{2} \frac{\partial^{2} f}{\partial s^{2}} d s^{2}<br>$$</p><p>同样的对$x,t$求二阶偏导,如上方花括号所示，其中对$t$的二阶偏导过小，被忽略,如下方花括号所示，只剩下对$s$的偏导。<br>$$<br>d f=\frac{\partial f}{\partial s} \cdot d s+\frac{\partial f}{\partial t} d t+\underbrace{\frac{1}{2} \frac{\partial^{2} f}{\partial s^{2}} d s^{2}}<br>$$</p><p>对于上式的$ds$,代入几何布朗运动：<br>$$<br>ds=\mu S d t+\sigma S d x<br>$$<br>有：<br>$$<br>\begin{aligned}<br>d f=&amp;\frac{\partial f}{\partial s} \cdot d s+\frac{\partial f}{\partial t} d t+\frac{1}{2} \frac{\partial^{2} f}{\partial s^{2}} d s^{2} \\=&amp;\frac{\partial f}{\partial S}[\mu S d t+\sigma S d x]+\frac{\partial f}{\partial t} d t+\underbrace{\frac{1}{2} \frac{\partial^{2} f}{\partial S^{2}} \sigma^2 S^{2} d t}\\=&amp;\left(\frac{\partial f}{\partial t}+\mu s \frac{\partial f}{\partial s}+\frac{1}{2} \sigma^{2} s^{2} \frac{\partial^{2} f}{\partial s^{2}}\right) d t+\sigma S \frac{\partial f}{\partial s} d x<br>\end{aligned}<br>$$<br>值得注意的是，花括号的部分推到下一部过于复杂，我也没仔细研究，最好当结论记忆。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>由此我们得出了伊藤引理：<br>对于$X_{t}$的随机过程的微分方程：<br>$$<br>d X_{t}=\mu_{t} d t+\sigma_{t} d W_{t}<br>$$<br>对其进行微分后的结果就是：<br>$$<br>d f\left(t, X_{t}\right)=\left(\frac{\partial f}{\partial t}+\mu_{t} \frac{\partial f}{\partial x}+\frac{1}{2} \sigma_{t}^{2} \frac{\partial^{2} f}{\partial x^{2}}\right) d t+\sigma_{t} \frac{\partial f}{\partial x} d W_{t}<br>$$<br>  这就是伊藤引理。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 金融数学 随机过程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我心目中最好看的十部电视剧</title>
+      <link href="/2020/02/26/wo-xin-mu-zhong-zui-hao-kan-de-shi-bu-dian-shi-ju/"/>
+      <url>/2020/02/26/wo-xin-mu-zhong-zui-hao-kan-de-shi-bu-dian-shi-ju/</url>
+      
+        <content type="html"><![CDATA[<p>作为一个看的并不多的阅片机，借此机会，梳理一下我心目中的十大电视剧，涵盖世界各地的电视剧。</p><a id="more"></a><h2 id="排行榜正文："><a href="#排行榜正文：" class="headerlink" title="排行榜正文："></a>排行榜正文：</h2><h2 id="No-1"><a href="#No-1" class="headerlink" title="No.1"></a>No.1</h2><p>《Breaking Bad》/绝命毒师</p><p><img src="https://i.loli.net/2020/02/29/OyewUTHABJbdLkv.png" alt="quicker_d1236e47-e46b-49fc-a780-b15ae6003f85.png"><br>绝命毒师没有挑剔的情节。</p><p>这部电视剧我认为和《红楼梦》有相似之处，就是在不同的年龄段看，会有不同的体会与心得。</p><p>此外，这部剧的细节看一两遍是看不出来的，值得反复揣摸。</p><p>我认为乐观来看，未来十年，二十年可能都不再会有超越这部剧的出现。</p><h2 id="No-2"><a href="#No-2" class="headerlink" title="No.2"></a>No.2</h2><p> 《The IT crowd》<br><img src="https://www.elsetge.cat/myimg/f/177-1772771_crowd-2013.jpg" alt="“the It crowd hd”的图片搜索结果"></p><p>英剧，喜剧，如果看了一两集你还没有爱上他，那么实在是没有什么更能让你绽放笑脸了。</p><h2 id="No-3"><a href="#No-3" class="headerlink" title="No.3"></a>No.3</h2><p> 非自然死亡<br><img src="https://3img.hitv.com/preview/internettv/sp_images/ott/2018/dianshiju/321935/20180424140736289-new.jpg" alt="“非自然死亡”的图片搜索结果"></p><p>短小精悍，富有哲理。</p><h2 id="No-4"><a href="#No-4" class="headerlink" title="No.4."></a>No.4.</h2><p>《生活大爆炸》</p><p><img src="https://i.loli.net/2020/02/26/98pRBNFkicbAlQY.png" alt="quicker_ae2c9492-88ec-49da-b46a-fb282cbb8074.png"></p><p>戛然而止不一定是坏事，懂得在合适的时候结束，有时候刚刚好。</p><h2 id="No-5"><a href="#No-5" class="headerlink" title="No.5."></a>No.5.</h2><p>《Better call saul》风骚律师<br><img src="https://www.mrbuzz.com/wp-content/uploads/2018/10/better-call-saul-season-4-e1539159209679.jpg" alt="“better call saul”的图片搜索结果"></p><p>作为《绝命毒师》的延伸剧，在某些地方已经超越了《绝命毒师》。</p><p>这部剧的排名或许太低了，也许他可以排到前三位，但是由于目前还没有完结，当然我相信这部剧的编剧Vince会让他上升至心目中的前二名。</p><h2 id="并列No-5"><a href="#并列No-5" class="headerlink" title="并列No.5"></a>并列No.5</h2><p>《犯罪心理》<br><img src="https://i.loli.net/2020/02/26/lBFqYNnCegHcOxv.png" alt="quicker_72e43ce4-da25-48b9-b48b-d37f7ef1b24e.png"></p><p>破案不是最重要的，探讨生活中的意义与朋友之间的理解同样重要。</p><h2 id="并列No-5-1"><a href="#并列No-5-1" class="headerlink" title="并列No.5."></a>并列No.5.</h2><p>瑞克和莫蒂</p><p><img src="https://wallpaperaccess.com/full/85322.jpg" alt="“rick and morty hd”的图片搜索结果"></p><p>别看是动画片，哲理一点不比前面的弱，值得思考的是里面有一些重口味画面，不适合18岁以下观看。</p><h2 id="No-7"><a href="#No-7" class="headerlink" title="No.7"></a>No.7</h2><p>《Legal High》/胜利即是正义<br><img src="https://cdn.hk01.com/di/media/images/1991669/org/42b3656537801d771c95e3924627b6a0.jpg/fhtfZyzV77czvCzoHmuXI_QzG7DfbUt_s9XRZbPV0WU?v=w1920" alt="“legal high”的图片搜索结果"></p><p>律政剧，新桓结衣与菅雅人，完美搭档。</p><h2 id="No-8"><a href="#No-8" class="headerlink" title="No.8."></a>No.8.</h2><p>how to get away with murder/逍遥法外<br><img src="https://i.loli.net/2020/02/26/OYjwzTxngMc3NBi.png" alt="quicker_fef340f4-59d1-47e2-b84c-9f8c5e5bded9.png"></p><p>律政剧，刺激，情节优秀。</p><h2 id="No-9"><a href="#No-9" class="headerlink" title="No.9"></a>No.9</h2><p>《老爸老妈罗曼史》<br><img src="https://mypostercollection.com/wp-content/uploads/2018/04/HIMYM-all-cast-poster.jpg" alt="“how i met your mother”的图片搜索结果"></p><h2 id="No-10"><a href="#No-10" class="headerlink" title="No.10"></a>No.10</h2><p>《Prison break》/越狱</p><p><img src="https://i.loli.net/2020/02/26/o1QAhHEdFk8Zab6.png" alt="quicker_71465aea-dd47-4773-810a-1a2c36e5d8f3.png"></p><h1 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h1><h2 id="《半泽直树》"><a href="#《半泽直树》" class="headerlink" title="《半泽直树》"></a>《半泽直树》</h2><p><img src="https://assets.chapters.com.my/2019/05/YY_JapanDrama-7.jpg" alt="“半泽直树”的图片搜索结果"></p><p>有点中二，但很正能量，2020将有第二部。</p><h2 id="《轮到你了》"><a href="#《轮到你了》" class="headerlink" title="《轮到你了》"></a>《轮到你了》</h2><p>![“轮到你了”的图片搜索结果]<img src="https://i.loli.net/2020/03/01/2cdZ3zvMxAKmn9V.png" alt="quicker_8096945e-b803-4bbe-a578-42da08584385.png"></p><p>这部剧前19集堪称经典，我记得每周日蹲守日文电视台看剧的情形。</p><p>最后的结局实在是不行，但前面的制作仍然十分棒，值得影视同行学习。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所见所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>生命诚可贵，没有下一句</title>
+      <link href="/2020/02/04/sheng-ming-cheng-ke-gui-mei-you-xia-yi-ju/"/>
+      <url>/2020/02/04/sheng-ming-cheng-ke-gui-mei-you-xia-yi-ju/</url>
+      
+        <content type="html"><![CDATA[<p>常说生命诚可贵，某某价更高。但是没有生命，你还体会的到什么价值吗？</p><a id="more"></a><p>近日读到林书豪（Jeremy Lin）在自己的instagram上发布的一篇文章，我觉得他的文笔很好，十分值得借鉴。</p><p>因此我自己也花了一些时间做了翻译，和大家分享，你可以在下方进行阅读。</p><div class="row">    <embed src="./lin.pdf" width="100%" height="550" type="application/pdf"></div><h1 id="生命的长度与生命的质量"><a href="#生命的长度与生命的质量" class="headerlink" title="生命的长度与生命的质量"></a>生命的长度与生命的质量</h1><p>长度与质量是生命的两个维度，我认为长度和质量同样的重要。如果缺少其中一个，则另外一个再长也没什么大用。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所思所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>全民遮眼</title>
+      <link href="/2020/02/02/quan-min-zhe-yan/"/>
+      <url>/2020/02/02/quan-min-zhe-yan/</url>
+      
+        <content type="html"><![CDATA[<p>当小明在书桌前读着《 枪炮、病菌与钢铁》时，手机上的连续几则推送吸引了他的目光。</p><a id="more"></a><p>一种病毒出现了，这是一种全新的病毒，更可怕的是，这种病毒的传播方式十分特别：<strong>通过目视</strong>。</p><p>也就是说，只要两个人互相看一眼，就会传染上。</p><p>消息一出，人人自危。</p><p>要想不看别人简单，但总得防着别人看你啊。</p><p>于是，情侣间停止了双眸之间的对视，以往的家人们开始通过视频通话，进行晚餐和日常交流，大街上人人眼神飘忽，走路时盯着摩天大厦的广告牌，大叔们还是看着美女，美女还是不看他们。</p><p>时间久了，人人都已经忘了“那个人”长成什么样子了。</p><p>时隔半年，当手机上再次推送<strong>《特大喜讯：病毒已被完全消灭》</strong>的消息，人们想抬起头看一看最亲密的人的时候，却发现彼此的眼神如骷髅般空洞。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 小说 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>科比</title>
+      <link href="/2020/01/31/ke-bi/"/>
+      <url>/2020/01/31/ke-bi/</url>
+      
+        <content type="html"><![CDATA[<p>科比是值得所有人了解的伟人。</p> <a id="more"></a><h1 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h1><p>科比布莱恩特走了，我至今不敢相信。  </p><p>每当我瞪着新闻标题的时候，我就不敢相信。  </p><p>作为看球晚的我，11年开始看NBA，错过了科比夺冠，但未忽略他所带来的精神。  我在某个周末亲眼见证了他遭遇了毁灭职业生涯的伤病，但他依然为了球队，在跟腱断裂的情况下，罚中制胜两球。  他教会了我团队，精神，责任心。</p><p><img src="https://i.loli.net/2020/01/31/Bt2y8dGXOZbNz7W.png" alt="quicker_dd53a124-c790-4319-aae5-240a05f6b711.png"></p><p>在高二时，我在午休时借好友的手机看科比的文字直播，当你得了60分，我为你高兴。 </p><p><img src="https://i.loli.net/2020/01/31/8cvrusJha6IRZXm.png" alt="quicker_edd52c91-de02-466a-96af-cf7cfd2a247d.png"></p><p>熟悉我的人知道，当高中班主任说我4，5点起床时，与科比相比，我是多么的高兴，我内心也清楚，4点起床是奉行曼巴精神。</p><p><img src="https://i.loli.net/2020/01/31/58u7EPiB1soGK4h.png" alt="quicker_e591462b-24ab-460f-8087-cbe78c3c1c8a.png"></p><p>我仍然抱着一丝侥幸，没有遗体，仿佛他就没有出事一样。  到后来，遗体也被发现了。</p><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>正如科比所说，<strong>真正的伟大在于激励下一代的人。</strong></p><p><img src="https://i.loli.net/2020/01/31/UPqpbgfmIrMnBLT.png" alt="quicker_963599f2-89b5-478e-8068-6b2645eb816d.png">  在人类世界中，人们称妨碍生活，令肉体痛苦的事物叫做病菌。  在浩瀚无穷的宇宙中，人人都是宇宙的病菌，你我皆是passers-by。  放下仇恨，不要整天比来比去，不要那么虚伪，到最后都是空一场。  好好为自己的目标，所爱的人奋斗吧。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 回忆 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>举国瞩目</title>
+      <link href="/2020/01/30/ju-guo-zhu-mu/"/>
+      <url>/2020/01/30/ju-guo-zhu-mu/</url>
+      
+        <content type="html"><![CDATA[<p>17岁时写的一篇轻小说，原载于我的新浪博客，现在慢慢搬运过来。</p><a id="more"></a><p> 全国人都在盯着电视机。</p><p> 这是本届赛事的最后一个比赛项目，目前A国以45块金牌的战绩与死敌B国在金牌榜上相持，B国的选手在这个项目里已无缘冠军，只要她，最后一个动作完成，便可以将金牌收揽怀中。</p><p> 比赛前，教练走到他身旁，“知道这次比赛的重要性了吧，”又拍拍她的肩，“坚持一下。”</p><p> 由于动作对细节要求完美无缺，必须每次落地时都完美，把下半身直直的停在地上。她反复练习这个动作无数遍，落地十分稳定。媒体把她的比赛时近乎完美的落地成为“脚尖的艺术精华”。</p><p> 去年春天，她被检查出膝盖扭伤。她懵了，她清楚好多前辈就是因为这个而黯然退役。</p><p>  轮到她了。</p><p>  她一如往常参加大赛一样踮着脚跑向表演台，向观众鞠一个完美依然90度的躬。</p><p> 此时去年治疗膝伤的情景历历在目，她知道承受那些痛苦只是为了参加今年的奥运会。</p><p>  也许是最后一届了吧。</p><p>  她抽出腰间的丝带，用手腕的摆动画出一个个圈圈儿。</p><p>  观众席传来阵阵掌声。</p><p> 她看着熟悉的四方场，在上面展示着训练了数千遍生动僵硬的舞蹈。她开始旋转，旋转，用脚尖的力量支撑着整个身体。</p><p>   她开始做后空翻，落地的声音仿佛挽歌。</p><p>   完成最后一个动作的时候，她听到咚一声。</p><p>   表演结束了。</p><p>   比赛结束了。</p><p>  鞠完躬，她昂起身子，向观众露出一个标准的灿烂的笑容，七颗牙齿，不多不少。</p><p>   举国欢呼。</p><p>  次日新闻头条便是记者抓拍的图片：冠军的微笑。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 小说 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论职业的特殊性</title>
+      <link href="/2020/01/28/lun-zhi-ye-de-te-shu-xing/"/>
+      <url>/2020/01/28/lun-zhi-ye-de-te-shu-xing/</url>
+      
+        <content type="html"><![CDATA[<p>我一直认为，职业是有区分的。<br>有些职业，属于特殊职业，从业人员应该具有极高的使命感与责任感。</p><a id="more"></a><p>不是所有人都适合从事这些职业，如果是为了 谋生，则应发现自己不适合后快速退出这个行业。<br>当然，对于没有责任心的人而言，也意识不到这一点。</p><h1 id="什么样的职业是特殊职业"><a href="#什么样的职业是特殊职业" class="headerlink" title="什么样的职业是特殊职业"></a>什么样的职业是特殊职业</h1><p>我认为有三个最典型的特殊职业：</p><blockquote><p>1.教师<br>2.医生<br>3.警察/消防员等人民守卫者</p></blockquote><h2 id="教师"><a href="#教师" class="headerlink" title="教师"></a>教师</h2><p>小学的老师告诉我们：老师是人类灵魂的工程师,清洁工人是城市的美容师。</p><p>然而从现在看来，很多大学教师没有担起塑造灵魂这个角色。<br>在我的成长之间，遇到了许多好老师，也遇到了许多不好的老师。<br>好的老师我都与他们有深入的交流，坏的老师我不会想跟他多说一句话。</p><h3 id="举个例子"><a href="#举个例子" class="headerlink" title="举个例子"></a>举个例子</h3><p>某个小学数学课上，一个小男孩向老师发问，得到的是这样的回应:</p><blockquote><p><strong>不要想那么多，不要钻牛角尖！</strong></p></blockquote><p>小孩子他是十分敏感的，世界观都靠模仿而行。</p><p>最近看一项研究表明，几个月大的婴儿，你以为他什么都不会，但实际上他已经能分辨人类之间的等级关系，看的出家暴（有人在被欺负），许多影视剧也因此来教育公众对小孩基本教育的重要性。（比如电影致命ID）<br>回到上面那个小男孩，如果他得到的是另一种回答呢？</p><blockquote><p><strong>你说的很对，下课来我办公室我们探讨一下，然后下节课你跟大家讲解一下</strong></p></blockquote><p>夸张一点，可能这个男孩对数学从此的感觉就不一样了，他的人生完全可能走向另一条轨道。</p><p>如果今后有人问他问题，他会鼓励探讨，而不是模仿这个老师，告诉他，不要钻牛角尖。</p><p>再比如说，现在部分大学教师专注于学术，<del>上课讲玄学，下课给低分</del>，我不知道他在干什么。</p><p>如果上课讲的是与课本毫无关系的前沿知识，我可以接受，但是如果你在放屁划水，我就从心底里看不起你。<br>不过，我们金融学院老师还都是不错的。</p><h3 id="再举个例子"><a href="#再举个例子" class="headerlink" title="再举个例子"></a>再举个例子</h3><p>如果老师念错了一个字，比如骰子的骰（tou)，那么小孩也跟着模仿了，但这个可以纠正，如果是原则性的概念上的错误呢？比如有人总喜欢把$lna$写成$ln_a$,这就是老师学错了，还把学生教错了，这就是没有责任心的体现。</p><p>你可以学错，但一定要记住要让学生学会，没有谁高谁低，真理为高。</p><h2 id="医生"><a href="#医生" class="headerlink" title="医生"></a>医生</h2><p>医生，是一个复杂的行业，至少是在这个环境下。<br>苦读与社会地位是值得的，每一位医生拥有的社会资源都是很足的，尤其是老医生。<br>但是去年12月底的杨文医生，今年的另一位医生，被病患砍了，杨文医生更是直接去世。<br>人家含辛茹苦救你，你去倒打一耙。<br>有的人比猪还不是人，我都不想侮辱猪。<br>曾经看过推特上一个朋友发了大概类似下面这个Twitter：</p><blockquote><p>X生病了，X的兄弟立马召集几个容易闹事的人，万一出事了就搞医闹。不过被X的女儿制止了。</p></blockquote><p>这不经令我悲哀，替医生，医院这个平台悲哀。</p><p>其他不谈了，大家自行体会。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所思所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>推荐一些经典学科的经典教材</title>
+      <link href="/2020/01/10/tui-jian-yi-xie-jing-dian-xue-ke-de-jing-dian-jiao-cai/"/>
+      <url>/2020/01/10/tui-jian-yi-xie-jing-dian-xue-ke-de-jing-dian-jiao-cai/</url>
+      
+        <content type="html"><![CDATA[<p>很久之前就想写了，但没有什么时间。现在给大家推荐一些重要学科的经典教材。</p><p>以下数学类科目仅针对非数学专业使用，数学专业请不要对号入座。</p><p>看书的效率比看网课更高，除非是顶尖的网课或者较垃圾的书。这个在编程随想的博客中也提到过。</p><a id="more"></a><h1 id="线性代数"><a href="#线性代数" class="headerlink" title="线性代数"></a>线性代数</h1><p>尽管在大多数人看来是一门计算课，但我希望大家从本质上去理解矩阵。</p><p>理解矩阵是线性代数的核心，对本科生来说，只推荐《Linear algebra done right》，中文为《线性代数应该这样学》。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1gareue48okj30bo0cimy5.jpg" alt="FE$[7MBE)DNR$5(]6FI0_AS.png"></p><p>这本书之前还上了微博热搜，因为清华大学统一把教材换成了这本书，只不过是英文版。</p><blockquote><p>清华大学是勇敢的，勇于抛弃面子书，选择正确的教科书。</p></blockquote><p>英文对于大多数民众是没有什么用的，但如果是需要获取世界前沿信息，英语永远是第一选择。经典的名词/编程语言都来自于英语。</p><p>由于确实在某些概念（向量/矩阵）比较难理解，也很推荐大家看看3blue1brown的线性代数科普视频，b站或者Youtube都有。他们用生动的3D的形式给你展现线性代数的基本概念，虽然我当年没怎么看懂，但最近又捡起来去复习了。</p><h1 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h1><p>茆师松《概率论与数理统计教程》，习题与教科书各一本。</p><p>不谈了，绝对业内经典，刷完也不用太看别的了。</p><p>![4]%KVTUCT@9582VKE46DNNA.jpg](<a href="http://ww1.sinaimg.cn/large/007DGvPCgy1garevxlr9ej309q09qgls.jpg" target="_blank" rel="noopener">http://ww1.sinaimg.cn/large/007DGvPCgy1garevxlr9ej309q09qgls.jpg</a>)</p><h1 id="统计学"><a href="#统计学" class="headerlink" title="统计学"></a>统计学</h1><p>统计学是一门人人都该掌握的学科，至少让你在网上论坛里能识别出睿智言论。</p><p>在生活中，不妨也了解一下统计学有趣的理论。</p><p>诸如<a href="/documents/辛普森悖论.pdf">辛普森悖论</a>，幸存者偏差之类的。</p><p>对于本科阶段的学习，推荐贾俊平的《统计学》，也是南京审计大学的指定课本。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1gargobwr9oj30m80m80tr.jpg" alt="undefined"></p><h1 id="计量经济学"><a href="#计量经济学" class="headerlink" title="计量经济学"></a>计量经济学</h1><p>首推孙敬水的《计量经济学》。</p><p>不想说了，这本书是我遇到的很棒的一本书，基本上看了这本书不会再用去查别的概念。<img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garf3q2sgvj30kv0sy761.jpg" alt="undefined"></p><h1 id="财务报表"><a href="#财务报表" class="headerlink" title="财务报表"></a>财务报表</h1><p>科普读物可以读《财报是一本故事书》，可以当提前预习用。</p><p>如果没有提前预习过，这门课还是挺难的。<img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garf4rohicj30j60rs41e.jpg" alt="undefined"></p><h1 id="高等数学与数学竞赛"><a href="#高等数学与数学竞赛" class="headerlink" title="高等数学与数学竞赛"></a>高等数学与数学竞赛</h1><p>推荐几本教材吧，一本是陈仲老师的竞赛教材。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garfvvio9nj30m80m8wlx.jpg" alt="undefined"></p><p>一本是裴礼文老师的竞赛教材（据说20考研考到很多？）<img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garfvdawyxj30rv15iwke.jpg" alt="undefined"></p><p>此外还有口碑不错的蒲和平，淘宝也都搜得到。</p><p>吉米多维奇简略版三件套，由张天德老师主编。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garfyd5bbtj30ly0sck19.jpg" alt="undefined"></p><h1 id="数学建模"><a href="#数学建模" class="headerlink" title="数学建模"></a>数学建模</h1><p>这个涉及的书很多，如果是一个概览的话，推荐几本我看过的吧。</p><p>第一本力荐，<strong>肖华勇写的大学生数学建模指南</strong>，无论你是建模编程还是写作，这本书都值得一读。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garg1ri81ej30m80m8jte.jpg" alt="undefined"></p><p>司守奎的《数学建模算法与应用》，编程时必备书籍。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1garg2ncwsaj30fp0maq6t.jpg" alt="undefined"></p><p>持续更新中…</p><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 好物分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>扔掉有色眼镜</title>
+      <link href="/2020/01/04/reng-diao-you-se-yan-jing/"/>
+      <url>/2020/01/04/reng-diao-you-se-yan-jing/</url>
+      
+        <content type="html"><![CDATA[<p>CFA的一门专业课《Corporate Finance》结束了，期末考很难，但考的还行。</p><p>不过我想谈谈有色眼镜的问题。</p><a id="more"></a><h1 id="好学生与好成绩的关联"><a href="#好学生与好成绩的关联" class="headerlink" title="好学生与好成绩的关联"></a>好学生与好成绩的关联</h1><p>这里引入郑登元老师（Teng-yuan Cheng）在群内给我们说的一番话。</p><p><img src="https://i.loli.net/2020/01/04/Kwpe5FjVsCg9NyY.png" alt="TIM图片20200104093239.png"></p><p>我看了这话还是挺感动的，因为我发现另一边的教育理念和我们的差别。</p><p>确实，传统的教育一直是有偏见的。以至于我这个资深的学生，也被一直扭曲了，<strong>认为自己考的“不那么理想”就“不配做学生了”。</strong></p><h1 id="论偏见的必要性"><a href="#论偏见的必要性" class="headerlink" title="论偏见的必要性"></a>论偏见的必要性</h1><blockquote><p>人们需要简单的规则来帮助他们应付这个世界，而不是决策树。中庸似乎让人变得更加极端，将一个人分为好和坏。</p></blockquote><p>比如苏南苏北之分，给苏南人一个非常简单的判定规则，尽管这个规则错误很大，但是仍然给很多人带来了影响。</p><p>父母偏爱更聪明成绩更好的孩子，有的老师不说，但还是给好学生一些优待。</p><p>这虽是资源紧张时必要的生存策略（即，把资源都给最好的人），但是其他人也应该受到关爱。</p><p>这样的教育观念一直是扭曲的，</p><p>再比如说，我们常常受到幸存者偏见的影响,看到了活下来高谈阔论的人，却没有看到沉默的大多数，消失的大多数。</p><p>其实这就是一个高度扭曲（此扭曲并非ugly，而是biased）的世界，我们都得适应。</p><h1 id="我也是一个抱有偏见的人"><a href="#我也是一个抱有偏见的人" class="headerlink" title="我也是一个抱有偏见的人"></a>我也是一个抱有偏见的人</h1><p>正如之前所说，我也是普通的人类，我也需要简单的规则来维护我的系统。</p><p>但这确实是愚蠢而幼稚的，一开始由于很多偏见，我也错失了许多机会，接收了许多不该接受的事情与人，也做错了很多事。</p><p>希望2020，我能改正，做一个大度包容的人。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所见所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学：解读Eviews回归结果（下）</title>
+      <link href="/2019/12/24/jie-du-eviews-hui-gui-jie-guo-xia/"/>
+      <url>/2019/12/24/jie-du-eviews-hui-gui-jie-guo-xia/</url>
+      
+        <content type="html"><![CDATA[<p>解读Eviews回归结果（下）终于出现了，这次的讲解更贴近于考试使用。</p><p>如果你还没有读过上集，可以先观看<a href="https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/">计量经济学：解读Eviews回归结果（上）</a></p><a id="more"></a><h1 id="先来看这个表"><a href="#先来看这个表" class="headerlink" title="先来看这个表"></a>先来看这个表</h1><p><img src="https://i.loli.net/2019/12/24/YtQj53qFTNlziOa.png" alt="1577188385762.png"></p><h3 id="尝试计算空白值"><a href="#尝试计算空白值" class="headerlink" title="尝试计算空白值"></a>尝试计算空白值</h3><p>建议先手动算一下空白值，答案如下。</p><p><img src="https://i.loli.net/2019/12/24/Ekho8WtPGNnYpKr.png" alt="2019-12-24-19-30-46-image.png"></p><h3 id="解答中的一些细节"><a href="#解答中的一些细节" class="headerlink" title="解答中的一些细节"></a>解答中的一些细节</h3><ul><li><p>表格中的上半部分的解答很简单，下半部分由$\bar{R^2}$，$n$，$k$，才得以算出。</p></li><li><p>其中这里的$n$就是样本容量（28），$k$是解释变量个数（其他地方和课本不一样，庞浩课本上默认把y也带进去了，所以第三行的公式你也可以写成：</p><p>$$R^{2}=1-\left(1-\bar{R}^{2}\right) \frac{n-k}{n-1}，k=3$$</p></li><li><p>解答第四行：</p><p>$$\hat{\sigma}=\sqrt{\sum e_{i}^{2} /(n-k-1)}$$</p><p>这里有两个地方值得注意，首先$S.E \space of  \space  regression$n是标准差，是要开方的，<strong>很容易忘记开方</strong>。其次在一元回归中：</p><p>$$\hat{\sigma}=\sqrt{\frac{\sum e_{i}^{2}} {n-2}}$$</p></li><li><p>在这里却变成了</p><p>$$\hat{\sigma}=\sqrt{\frac{\sum e_{i}^{2}} {n-k-1}}$$</p></li></ul><p>因为一元线性回归是一个特例，$k=1$的特例，在计算多元线性回归的$S.E \space of  \space  regression$时，需注意使用通用的形式。</p><h3 id="但是如果题目没有给-bar-R-2-，那么应该如何算R-2呢？"><a href="#但是如果题目没有给-bar-R-2-，那么应该如何算R-2呢？" class="headerlink" title="但是如果题目没有给$\bar{R^2}$，那么应该如何算R^2呢？"></a>但是如果题目没有给$\bar{R^2}$，那么应该如何算R^2呢？</h3><ul><li>我们可以利用如下的公式计算。</li></ul><p>$$(S.D \ dependent \ var)^2\cdot(n-1)=TSS$$</p><ul><li>再利用</li></ul><p>$$R^2=\frac{ESS}{TSS}=\frac{1-RSS}{TSS}$$</p><p>来计算$R^2$</p><p><strong>值得注意的是：</strong></p><blockquote><ul><li>有时候​算出来会有误差，因为题目数字小数位数太少，​给的不够精确。</li><li>题目小数点够多（比如本题），或者数字足够大，就可以放心用。</li></ul></blockquote><p>现在，你可以尝试用这种方法重新计算一下本题，还挺方便的。</p><h1 id="再来看这个表"><a href="#再来看这个表" class="headerlink" title="再来看这个表"></a>再来看这个表</h1><p><img src="https://i.loli.net/2019/12/24/vL1tEAiPDqaFru2.png" alt="2019-12-24-19-40-44-image.png"></p><p>这是一个white检验，用来检验是否存在异方差，我们可以观察Obs R-squared 的显著情况来观察是否有异方差。</p><ul><li>p-value&gt;0.1,显然不显著</li></ul><p>所以并没有异方差。</p><h1 id="再再来看这个表"><a href="#再再来看这个表" class="headerlink" title="再再来看这个表"></a>再再来看这个表</h1><p><img src="https://i.loli.net/2019/12/24/I9V7YEdfJxtULmp.png" alt="2019-12-24-19-44-11-image.png"></p><p>所谓<strong>多重共线性</strong>，就是模型中含有的变量高度相关，事实上加进去跟没加一样（因为另一个变量足够解释模型了）。</p><p>所以我们新做一个模型，用$x_{1}$做因变量，$x_{2}$做自变量，看这个回归啊显著，显著了，就说明高度线性相关，有多重共线性。</p><p>那么很明显，$x_{2}$的 $p-value$不高，所以无多重共线性</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学中几个常见的证明</title>
+      <link href="/2019/12/22/ji-liang-jing-ji-xue-zhong-ji-ge-chang-jian-de-zheng-ming/"/>
+      <url>/2019/12/22/ji-liang-jing-ji-xue-zhong-ji-ge-chang-jian-de-zheng-ming/</url>
+      
+        <content type="html"><![CDATA[<p>持续更新中…<a id="more"></a></p><h1 id="证明一：-bar-hat-y-bar-y"><a href="#证明一：-bar-hat-y-bar-y" class="headerlink" title="证明一：$\bar{\hat{y}}=\bar{y}$"></a>证明一：$\bar{\hat{y}}=\bar{y}$</h1><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga5tjs5c7hj30tp0g1acs.jpg" alt="50DBC018E3509CA625D6A859B73AB870.png"></p><h1 id="证明二：回归直线通过-bar-x-bar-y"><a href="#证明二：回归直线通过-bar-x-bar-y" class="headerlink" title="证明二：回归直线通过$\bar{x},\bar{y}$"></a>证明二：回归直线通过$\bar{x},\bar{y}$</h1><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga5tljagqfj30xe0szagm.jpg" alt="A37B46DB9076AD77E1BD10952DA96E5E.png"></p><h1 id="证明3：最小二乘法估计量无偏性的证明"><a href="#证明3：最小二乘法估计量无偏性的证明" class="headerlink" title="证明3：最小二乘法估计量无偏性的证明"></a>证明3：最小二乘法估计量无偏性的证明</h1><p>所谓无偏性，就是两个估计量的期望等于他们的真实值。即，要证：<br>$$<br>E(\hat{b_{1}})=b_{1} \quad E(\hat{b_{0}})=b_{0}<br>$$<br>因为<br>$$<br>y_{t}=b_{0}+b_{1} x_{t}+u_{t}.<br>$$<br>且由线性可知<br>$$<br>\hat{b}_{1}=\sum k_{t} y_{t}<br>$$<br>所以由（2），（3）</p><p>$$% 注意 \tag{…} 编号的位置<br>\begin{equation}<br>\begin{split}<br>\hat{b}_{1}&amp;=\sum k_{t} y_{t}\\&amp;=<br>\sum k_{t}\left(b_{0}+b_{1} x_{t}+u_{t}\right)\\&amp;=b_{0} \sum k_{t}+b_{1} \sum k_{t} x_{t}+\sum k_{t} u_{t}\\&amp;=b_{1}+\sum k_{t} u_{t}<br>\end{split}<br>\tag{4}<br>\end{equation}$$<br>$$<br>\hat{b}_{1}=b_{1}+\sum k_{t} u_{t}<br>$$<br>两边取期望，得证</p><h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><p>以下是计量经济学证明中常用的几个结论。<br><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga5tma82xbj30kz08mglw.jpg" alt="2CF0749E9A49A183ECB0A3C02944E090.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用python计算身份证校验码</title>
+      <link href="/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/"/>
+      <url>/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/</url>
+      
+        <content type="html"><![CDATA[<p>传统的身份证一共18位，其中最后一位是验证码。</p><a id="more"></a><p>首先，前六位是地区码，中间八位是生日，再三位可以理解是是出生顺序码+男女编码。</p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga5pajx4cuj30n40aswh1.jpg" alt="undefined"></p><p>比如身份证为320204199902120105的人</p><blockquote><p>1999年2月12日，出生于江苏无锡梁溪区（320204）的一名女孩（倒数第二位的“0”），是该地区第一个出生的（01）</p></blockquote><p>还有最后一位是校验码，用来验证你前面的身份证码是不是瞎填的。</p><h2 id="此处待填坑，先给出代码"><a href="#此处待填坑，先给出代码" class="headerlink" title="此处待填坑，先给出代码"></a>此处待填坑，先给出代码</h2><pre><code class="python">#计算前17位的权重，打印出权重列表weight_list=[]num=list(range(1,18))fun=lambda i:(2**(18-i))%11weight_list=list(map(fun,num))print(weight_list)&gt;[7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]</code></pre><pre><code class="python">#计算验证码的主程序def examine(certificate):#验证位数是否正确        if not len(str(certificate))==17:            print(&#39;false information&#39;)        else:            certificate_number_list=[int(h) for h in str(certificate)]#权重相乘            result=sum([x*y for x,y in  zip(certificate_number_list,weight_list)])#下列是大量取余运算            mod_result=result%11            sub_result=12-mod_result            doublemod_result=sub_result%11 #末尾为10则返回‘x&#39;            if doublemod_result==10:                examinor=&#39;x&#39;            else:                examinor=str(doublemod_result)#打印校验码和完整的身份证号码            print(examinor)            print(&#39;Your full certificate number is&#39;+ &#39;\n&#39;+str(certificate)+examinor)</code></pre><p>调用函数</p><pre><code class="python">examine(32020119990212341)</code></pre><p>得出结果</p><pre><code class="python">&gt; 7&gt; Your full certificate number is320201199902123417</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学知识串讲(1)</title>
+      <link href="/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/"/>
+      <url>/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/</url>
+      
+        <content type="html"><![CDATA[<p>补充一些令人疑惑的概念。<a id="more"></a></p><h2 id="遗漏变量和加进无关变量的模型，对模型的影响分别是什么？"><a href="#遗漏变量和加进无关变量的模型，对模型的影响分别是什么？" class="headerlink" title="遗漏变量和加进无关变量的模型，对模型的影响分别是什么？"></a>遗漏变量和加进无关变量的模型，对模型的影响分别是什么？</h2><p>先下结论：</p><p>（1）遗漏模型中本该有的变量，损失的是<strong>无偏性和一致性</strong>；</p><p>（2）加进模型中不应该有的变量，其损失的是<strong>有效性</strong>。</p><p>  具体解释一下，第一：模型中<strong>遗漏重要解释变量</strong>的不良后果比模型中引入无关解释变量的<strong>后果要严重得多</strong>。遗漏了重要解释变量的模型是一个错误的不可用的模型，而引进了无关解释变量的模型是一个精度不高、但仍具一定利用价值的模型。应力求避免模型对重要解释变量的遗漏，</p><p>第二：虽然在模型引进无关解释变量的不良后果相对较小，但不能认为在模型中包含无关解释变量是可以容忍的。事实上，如果出现这种情况，会造成模型参数估计量精确度下降，还会引发解释变量的<strong>多重共线性</strong>问题，以及造成自由度的损失。</p><h2 id="虚拟变量"><a href="#虚拟变量" class="headerlink" title="虚拟变量"></a>虚拟变量</h2><h4 id="应该引入几个虚拟变量？"><a href="#应该引入几个虚拟变量？" class="headerlink" title="应该引入几个虚拟变量？"></a>应该引入几个虚拟变量？</h4><p>(1) 一个因素多个属性。若定性因素有m 个不同属性或相互排斥的类型，在模型中则只能引入$m-1$ 个虚拟变量，否则会产生<strong>完全多重共线性。</strong></p><blockquote><p>例子：一年四个季度，引入3个虚拟变量</p></blockquote><p>(2) 多个因素各两种属性。如果有$m$个定性因素，且每个因素各有两个不同的属性类<br>型，则引入$m-1$ 个虚拟变量。</p><p><strong>一个例子：</strong></p><p><img src="https://i.loli.net/2019/12/21/wKhR6VlcnNkvT97.png" alt></p><h3 id="两种设定形式：加法与乘法"><a href="#两种设定形式：加法与乘法" class="headerlink" title="两种设定形式：加法与乘法"></a>两种设定形式：加法与乘法</h3><p>（1）加法类型。</p><p>在模型中，将<strong>虚拟解释变量作为新一项</strong>，以达到其调整<strong>截距</strong>的目的，然后比较有无前后虚拟变量<strong>截距的差距</strong>来看虚拟变量的影响/</p><hr><p><img src="https://i.loli.net/2019/12/21/Fj4M9ePAJTXzYk8.png" alt></p><p>（2）乘法类型。</p><p>模型中，将<strong>虚拟解释变量与其他解释变量相乘</strong>，作为新的解释变量出现在模型中，以达到其调整设定模型<strong>斜率系数</strong>的目的。<br>乘法形式引入虚拟解释变量的主要作用在于：</p><p>①两个回归模型之间的比较</p><p><strong>②因素之间的交互影响分析</strong></p><p>③提高模型对现实经济现象的描述精度</p><p><strong>举个例子：</strong></p><p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1ga46oyn540j30oi0gdgpp.jpg" alt="1576492161318.png"></p><h2 id="举出时间序列，截面数据，面板数据的例子"><a href="#举出时间序列，截面数据，面板数据的例子" class="headerlink" title="举出时间序列，截面数据，面板数据的例子"></a>举出时间序列，截面数据，面板数据的例子</h2><h3 id="截面数据："><a href="#截面数据：" class="headerlink" title="截面数据："></a>截面数据：</h3><p><img src="https://qph.fs.quoracdn.net/main-qimg-7beac886a9cd47c5ba4324dfd36dc2f6.webp" alt="img"></p><h3 id="时间序列："><a href="#时间序列：" class="headerlink" title="时间序列："></a>时间序列：</h3><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga2wq0ao7wj30cx03h0sp.jpg" alt="undefined"></p><h3 id="面板数据"><a href="#面板数据" class="headerlink" title="面板数据"></a>面板数据</h3><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga2wqh7z3xj30cw06v3ys.jpg" alt="undefined"></p><p>之前在做这个作业的时候我写了不同事物的例子，今天在Quora上看到这个<a href="https://www.quora.com/What-is-the-difference-between-panel-data-time-serial-data-and-cross-sectional-data" target="_blank" rel="noopener">回答</a>，特意搬运过来。深感这样才是<strong>正确举例子的办法</strong>。不光老师，学生应该也要学会这样举例子。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>父母心</title>
+      <link href="/2019/12/19/fu-mu-xin/"/>
+      <url>/2019/12/19/fu-mu-xin/</url>
+      
+        <content type="html"><![CDATA[<p>两件事，一条心。</p><a id="more"></a><h1 id="第一件事"><a href="#第一件事" class="headerlink" title="第一件事"></a>第一件事</h1><p>上次在保利做剧院的志愿者时，有一位中年阿姨问我</p><blockquote><p>怎么才能在这边的剧院做志愿啊？</p></blockquote><p>我愣了一下，这样的问题我见过许多，不过之前都是想蹭便宜的猥琐大叔不怀好意的来问我。<br>当然，我也有着蹭便宜的心理，这边的志愿质量比其他要好得多。不过我明年也会频繁的去保利大剧院看剧，补交票钱。<br>“这边只能是大学生做，是和学校对接的”。我回答道。<br>“对，我是帮我儿子问的，他今年上初中，整天就抱这个手机打游戏，我想让他出来运动运动，熏陶熏陶。”<br>“可是这边一次服务也就一两个小时，还是避免不了玩手机啊”我回答道。<br>“没事，就一会会儿也好。怎么在这边做啊，是不是要培训什么的”<br>“等他上了大学就可以了”。我若无其事的回答道。<br>“害！他呀！中年阿姨长叹一口气，他哪上得了大学，过几年就出去给人家工作了！”<br>我为我的行为感觉到有些后悔，以为大家都能上大学，把这件事说的轻飘飘的。</p><h1 id="第二件事"><a href="#第二件事" class="headerlink" title="第二件事"></a>第二件事</h1><p>勒布朗·詹姆斯，年少成名，如雷贯耳，高中比赛就全美直播。<br>如今自己的儿子Bronny也上了高中，在全美直播面前打球。</p><p><img src="https://clutchpoints.com/wp-content/uploads/2019/12/Lakers-news-LeBron-James-says-it_ll-be-very-emotional-watching-Bronny-James-Jr.-play-against-St.-Vincent-St.-Mary-High-School.jpg" alt="“james and bronny”的图片搜索结果"></p><p>在比赛结束后令我印象深刻的不是Bronny的表现，抑或是詹姆斯作为一个观战的父亲，为儿子的表现喝彩时的手舞足蹈。<br><strong>而是詹姆斯在记者采访中，表达了十多年前对母亲的歉意</strong>。</p><blockquote><p>2008年，东部半决赛第4场，骑士对阵凯尔特人，由于皮尔斯在一次防守快攻中对詹姆斯犯规，格洛丽亚站起来冲着皮尔斯大吼，甚至一度要冲进场去跟对方理论。詹姆斯觉得面子过不去，有点不满母亲的行为，他生气地冲向母亲，对着格洛丽亚吼道：“你坐下！”（来自网络）</p></blockquote><p>赛后，詹姆斯坦言养儿方知父母难，通过这场比赛，他更加理解母亲格洛丽亚当年为自己加油时的心情，他要为以前劝阻母亲不要激动甚至为此向母亲大吼而道歉。</p><p>回想过去，我也有若干对父母说“你坐下”的经历，或许直到此时，我也才能更理解这件事。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所见所想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学：解读Eviews回归结果（上）</title>
+      <link href="/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/"/>
+      <url>/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/</url>
+      
+        <content type="html"><![CDATA[<p>解读一下eviews里面回归结果的意义与关系，分上下两集。</p><a id="more"></a><h1 id="p-值"><a href="#p-值" class="headerlink" title="$p$值"></a>$p$值</h1><p><img src="https://i.loli.net/2019/12/16/huw2UALJexznTPf.png" alt="sp20191215_222424_561.png"></p><ul><li><p>从图中可以看到，P=0.9403，过大，一般p&lt;0.1为宜。</p></li><li><p>当$p&lt;0.1$时，选择拒绝原假设（原假设：$x_{1}$的系数为0），从而认为系数显著的不为0.</p></li></ul><h2 id="t-值"><a href="#t-值" class="headerlink" title="$t$值"></a>$t$值</h2><p><img src="https://i.loli.net/2019/12/16/1l9ZaKjEzqOVRWC.png" alt="sp20191215_222438_676.png"></p><ul><li><p>$t$值和$p$值相互照应，你可以看到t值大的，p值对应的小，一般来说$|t|$&gt;2，就基本上很显著了。你可以在图中看到，T值为6.319时，P值为0.000。</p></li><li><p><strong>请注意：事实上，此时p值并不为0</strong>，只是显示为0，在写论文时，应该写p&lt;0.01）</p></li></ul><h2 id="S-E-of-regression-回归方程的标准差"><a href="#S-E-of-regression-回归方程的标准差" class="headerlink" title="S.E of regression(回归方程的标准差)"></a>S.E of regression(回归方程的标准差)</h2><p><img src="https://i.loli.net/2019/12/16/I2QwhBdlX3i9jfL.png" alt="sp20191215_222453_673.png"></p><p><strong>(之前写错了，现已更正)</strong></p><h2 id="F-统计量"><a href="#F-统计量" class="headerlink" title="$F$统计量"></a>$F$统计量</h2><p><img src="https://i.loli.net/2019/12/16/VJEFTX6MIWUyfBe.png" alt="sp20191215_222511_910.png"></p><ul><li><p>$F$统计量衡量的是整个模型，不用算你也知道这个模型很显著。</p></li><li><p>但是你需要注意，由于拟合程度很高（0.99），且参数中有不显著的量（X1,X2），你需要考虑多重共线性的问题。这是十分重要的</p></li></ul><p>这是考试中常考的一个概念。</p><h2 id="AIC（赤池信息准则）"><a href="#AIC（赤池信息准则）" class="headerlink" title="AIC（赤池信息准则）"></a>AIC（赤池信息准则）</h2><p><img src="https://i.loli.net/2019/12/16/V9k5YPZSWIJUoCq.png" alt="sp20191215_222526_542.png"></p><blockquote><p>看到这个准则我是不寒而栗的，因为我想到了赤池美里。</p></blockquote><p><strong>准则：AIC越小越好</strong></p><p>AIC的计算来自于信息熵。</p><ul><li><p>这个12.22没有任何意义，只有和其他模型比一比才知道，</p></li><li><p>如果对于同一组数据，其他条件都一样，做两种回归，一种AIC=12，一种AIC=15，则应该选择AIC=12的模型</p></li></ul><h2 id="DW值"><a href="#DW值" class="headerlink" title="DW值"></a>DW值</h2><p><img src="https://i.loli.net/2019/12/16/a6KRBFTDINfEAhS.png" alt="sp20191215_222533_477.png"></p><p>DW是判断自相关性的：其中有：$DW=2（1-P)$</p><ul><li><p>当值越趋近于4，则越具有负自相关的可能</p></li><li><p>当值越趋近于2，则无自相关（仅检验了一阶）</p></li><li><p>当值越趋近于0，则越具有正自相关的可能</p></li></ul><h2 id="7-观测值"><a href="#7-观测值" class="headerlink" title="7.观测值"></a>7.观测值</h2><p><img src="https://i.loli.net/2019/12/16/OPbsxpcFQEIemft.png" alt="sp20191215_222605_227.png"></p><p>尽管很不起眼，但观测值是20个，如果要做检验的话，我们需要样本容量。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学若干判断题的解答</title>
+      <link href="/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/"/>
+      <url>/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/</url>
+      
+        <content type="html"><![CDATA[<p>持续更新中…<a id="more"></a></p><ol><li><p>当异方差出现时，最小二乘估计是有偏的且不具有有效性 </p><blockquote><p>(×)，无偏且具有有效性</p></blockquote></li><li><p>当异方差出现，t检验F检验失效（√）</p></li><li><p>如果回归结果的残差表现出系统性，则表明有异方差</p><blockquote><p>(×)，多重共线性，自相关也会这样</p></blockquote></li><li><p>如果回归模型遗漏了一个<strong>重要变量</strong>，则残差必然表现出明显的趋势(√)</p><blockquote><p>既然是重要变量，还是不能随便去除的。否则回归就会有异常。</p></blockquote></li><li><p>经典线性回归模型（CLRM）中的干扰项不服从正态分布的，OLS 估计量将是有</p><p>偏的。</p><blockquote><p>(×)即使经典线性回归模型中的干扰项不服从正态分布，<strong>OLS</strong>估计量仍然是<strong>无偏的</strong>。因为，该表达式成立与否与正态性无关。</p></blockquote></li><li><p>半对数模型Y=A+BLnX+\mu中，参数B的含义是 的绝对量变化,引起Y 的绝对量变化。(×)</p><blockquote><p>这个如果你不懂的话我建议你理解一下下面这个公式，</p></blockquote></li></ol><p>   $$b_{1}=\frac{\mathrm{d} y}{\mathrm{d}(\ln x)}=\frac{\mathrm{d} y}{\mathrm{d} x / x}$$,x变化的 是百分比，y变化的是绝对数量。</p><ol start="7"><li><p>双变量模型中，对样本回归函数整体的显著性检验与斜率系数的显著性检验是一致的。(√)</p></li><li><p>在异方差性的情况下，常用的OLS法高估了估计量的标准误差。</p><blockquote><p>(×)，可能高估可能低估</p></blockquote></li><li><p>解释变量与随机误差项相关，是产生多重共线性的主要原因。(×)</p><blockquote><p>产生多重共线性的主要原因是：经济本变量大多存在共同变化趋势；模型中大量采用滞后变量；认识上的局限使得选择变量不当</p></blockquote></li><li><p>虚拟变量原则上只能取0，1</p><blockquote><p>（√），一般来说是这样。后面会发一些澄清虚拟变量的知识</p></blockquote></li><li><p>外生变量决定了内生变量</p><blockquote><p>（√），内生变量是模型内部存在的固定的一个有概率值的变量，<strong>由外生变量决定</strong>，不改变外生变量就难以改变内生变量。</p></blockquote></li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>乖巧的悖论</title>
+      <link href="/2019/12/13/guai-qiao-de-bei-lun/"/>
+      <url>/2019/12/13/guai-qiao-de-bei-lun/</url>
+      
+        <content type="html"><![CDATA[<p>一个我提出的鬼畜思想，仅供笑话。。<a id="more"></a></p><h2 id="1-乖巧的悖论（sheep-paradox）"><a href="#1-乖巧的悖论（sheep-paradox）" class="headerlink" title="1.乖巧的悖论（sheep paradox）"></a>1.乖巧的悖论（sheep paradox）</h2><p>乖巧的悖论（sheep paradox）就是，小时候乖巧的孩子，长大后会变得心理问题增多的现象。</p><p>这个术语的名字（包括英文）是我取的，所以也没有什么数据可证，但我相信它仍然是有缘由的。</p><h2 id="2-一个例子"><a href="#2-一个例子" class="headerlink" title="2.一个例子"></a>2.一个例子</h2><p>知乎上一个回答是这样说的：</p><blockquote><p>任教于高中。在我所接触的学生中，有这样一类孩子——</p><p>他们会习惯性地[揣摩]</p><p>最常见的是揣摩老师，当然亦有揣摩同学者。他们看起来不言不语，乖乖巧巧，但实际上，自我意识和独立思考的能力普遍欠缺。</p><p>这类孩子在学习中，课堂上会揣摩老师喜欢哪些形式的反馈，答题时会揣摩老师喜欢何种内容的回答，写作中会揣摩阅卷老师会更偏爱哪类风格的文章……</p><p>上届有一个女生，高一入学后，连续两次统考前都来问我语文作文部分是哪位老师阅卷。我之前不解其意，后来才知道，是她的父亲告诉她，不同的老师喜欢不同风格的文章，你要根据老师的个人风格去揣摩她（他）喜欢的文风，这样才能拿到高分。</p><p>另有一个女生，上数学课时总是朝老师频频点头，上物理课时总是一手握笔一手扶额眉头紧锁做思索状……但考试时，这两门的成绩却总不理想。数学和物理老师都很诧异，课上数她听得认真，这样的孩子怎么会成绩不好呢？</p><p>有一次，我特意在同一天分别听了我们班的数学课和物理课，然后我把这个女生叫来，就当天课堂所讲的知识点向她提问，她答不出。我又继续问：“那你可不可以告诉我，今天的两节课分别都主要讲了什么，你哪里没太听懂？”</p><p>她愣了片刻，摇摇头。</p></blockquote><h2 id="我的例子"><a href="#我的例子" class="headerlink" title="我的例子"></a>我的例子</h2><p>这个事情其实也发生在很多人身上，许多朋友向我表达过他们数学课坐在前排，<strong>尽管很困，尽管什么都听不进去，还是要坐在前排。</strong></p><p>当然，这里我并没有说坐在教室的前排听课就是在讨好，对于我自己来说，如果前排没那么挤和压抑的话，我还是很愿意去前排听课的。</p><p>我也有揣摩老师的想法，不过后来就不揣摩了，比如初中老师说他喜欢听《红日》，我就在议论文中写了一些红日的歌词。我不记得那是牵强附会还是信手拈来，反正我写这段歌词的一个强烈目的就是迎合老师。</p><p>后来我就不迎合了，迎合个啥。好好做自己的事情，迟到或者逃课不会去狡辩，争那点可怜的分数。</p><h2 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h2><p>这种讨好型人格并不少见，然而讨好本来期待的得到的是尊敬与喜爱，到最后却会演化成扭曲与病态。正所谓“人善被人欺”。</p><p>这样的孩子多半也有严厉的家庭环境，父母不苟言笑，孩子也不敢笑。早早的学会察言观色，讨人喜欢。《被嫌弃的松子的一生》就有这样一个场景，松子一开始不被父亲喜爱，直到有一次做了一个难看的鬼脸，父亲竟然被她逗笑了。</p><p><img src="https://i.loli.net/2019/12/13/OFYAeIqlPgsBzph.png" alt></p><p>于是这成了她一生的标志，讨好别人的标准动作。</p><p><strong>开始你觉得滑稽，好笑，后来就演化成了进一步的厌恶。</strong></p><p>这部电影看了我到现在都不想看第二遍，太惨了，希望每一个人都能做人格独立的人。</p><p>不刚愎自用，不卑微求爱。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>计量经济学：自相关，共线性，异方差总结</title>
+      <link href="/2019/12/12/ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie-hexo-new-ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie/"/>
+      <url>/2019/12/12/ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie-hexo-new-ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p><a href="/documents/多重共线性，异方差性，自相关性.pdf">多重共线性，异方差性，自相关性</a></p><p>点击即可下载思维导图</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 计量经济学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用python做金融分析（1）</title>
+      <link href="/2019/12/11/li-yong-python-zuo-jin-rong-fen-xi-1/"/>
+      <url>/2019/12/11/li-yong-python-zuo-jin-rong-fen-xi-1/</url>
+      
+        <content type="html"><![CDATA[<p>在此每隔几天做个记录，也供后来者飨用 。</p><p>这个操作实际上用excel做是很简单的，当然python也有他自己的优势。</p><p>在计算之前，先要介绍几个函数。</p><p>1.np.roll (滚动函数)</p><p>函数的用法为np.roll(name,length,axis)</p><pre><code class="python">import numpy as np#np.roll(a,distance,axis) #默认axis=1，进行水平滚动a=[2,3,4,5][In]  np.roll(a,1) #水平滚动一单位[out]:      [3,4,5,2][In]: a_reshape=reshape(a,[2,2])            np.roll(a_reshape,1,axis=0) #垂直方向上一单位滚动[out]: a_reshape:[2,3;                  4,5]              roll: [4,5;              2.3]</code></pre><p>这个函数在计算收益率时就很有用，比如需要前一天的收盘价除以后一天的收盘价的时候，滚动函数就能够帮到你。</p><p>2.切片函数</p><pre><code class="python">import numpy as npa=[1,3,6,2,5]print(a)[ 0.64061262 0.8451399 0.965673 0.89256687 0.48518743]print(a[-1]) ###取最后一个元素[5]print(a[:-1]) ### 除了最后一个取全部[1,3,6,2]print(a[::-1]) ### 取从后向前（相反）的元素[5,2,6,3,1]print(a[1::-1]) ### 取从下标为1的元素翻转读取[[]</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Are we better off?（我们生活比以前更好了吗）</title>
+      <link href="/2019/12/07/are-we-better-off/"/>
+      <url>/2019/12/07/are-we-better-off/</url>
+      
+        <content type="html"><![CDATA[<p>和以前相比，我们的生活更好了吗？这篇文章或许能给你不同的答案。</p><a id="more"></a><p>近日读到一位推友推荐的论文，论文的结论是：<br>和人们的猜测不同，<strong>人们进入农业社会后，比起远古狩猎时期，生活并没有的变得更好。</strong><br><img src="https://i.loli.net/2019/12/07/1YKTgWkh4tRCfw6.png" alt="20191207060548561.png"><br>表现在两个方面，<strong>一是他们需要花费更长的时间来达到狩猎时期同等的物质资料</strong>，二是他们有了<strong>更少的闲暇时间</strong>，女性还（针对远古时期，非歧视）少了做家务和照料孩子的时间。</p><p>农业社会比狩猎时期好不了多少，<strong>我们今天又比过去好了多少？</strong></p><p>你可能会发笑，把iPad（最近我才知道他的正确拼写方式）和switch甩到我的脸上来驳斥我。</p><p>事实上，比起上一代的“富士康流水线”的男工女工，今天大多数坐着办公室的新新青年似乎变得优渥无比。但是实际上还是用命换钱，只不过流水线上的零件组装，变成了电脑上的PPT和Word。大多数人是这样，不要用个例来代表大多数人的生活。</p><p>生产力科技的发达是少部分人带动的，大部分人只是坐享其成。</p><p>甚至我们遭遇着更惨的剥削，且不谈996251，大多数人背负着比以往农耕社会更大的精神压力。人们在年轻时比以往更容易患上“富贵病”（癌症），在这里也追念我喜欢的两位最近逝世的年轻人：高以翔和吉喆。都看过他们的表演。</p><p>那么，我们真的变得更好了吗？</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 思考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>两基金分离定理（Two-fund theorem）</title>
+      <link href="/2019/12/05/liang-ji-jin-fen-chi-ding-li-two-fund-theorem/"/>
+      <url>/2019/12/05/liang-ji-jin-fen-chi-ding-li-two-fund-theorem/</url>
+      
+        <content type="html"><![CDATA[<p><strong>两基金分离定理（Two-fund  theorem）</strong>是华维老师课上讲的一个重点概念，下面来重点介绍一下。</p><a id="more"></a><h2 id="一、两个过程"><a href="#一、两个过程" class="headerlink" title="一、两个过程"></a>一、两个过程</h2><blockquote><p>基金分离定理包含的是两个过程，而非投资两种基金。</p></blockquote><p>这两个过程分别是投资决策和金融决策：</p><h2 id="投资决策（investment-decision）过程"><a href="#投资决策（investment-decision）过程" class="headerlink" title="投资决策（investment decision）过程"></a>投资决策（investment decision）过程</h2><p>   首先我们需要注意夏普比率（sharp ratio）的定义：<br>$$<br>   S_{p}=\frac{\bar{r}_{p}-\bar{r}_{f}}{\sigma_{p}}<br>$$<br>   指的是每单位风险$\sigma_{p}$,所对应的额外报酬率($\bar{r}_{p}-\bar{r}_{f}$)的多少，简单来说，夏普比率越高越好。</p><p>   第一个决策过程：投资决策指的就是<strong>最大化夏普比率</strong>的风险资产组合的一个过程</p><p>   如果用图形来解释的话，就是CAL曲线（资产配置线）与有效边界的切点，图中为P点。<br><img src="https://i.loli.net/2019/12/05/XFZp2UytbJuHonC.png" alt></p><h2 id="金融决策（financial-decision）过程"><a href="#金融决策（financial-decision）过程" class="headerlink" title="金融决策（financial decision）过程"></a>金融决策（financial decision）过程</h2><p>  那么再来看金融决策的过程，<br>   然后，决定最佳风险投资组合和无风险资产的组合，具体取决于她的态度。<br>   在下图中，添加了一条无差异曲线，表示某个投资者的风险抵抗能力。对于这个投资者而言，最优投资点是C。<br>   如果这条无差异曲线向左下角滑动，那么说明一位更惧怕风险的投资者进行了金融决策。<br>   <img src="https://i.loli.net/2019/12/05/TujmGAnRp6o48Ph.png" alt></p><h2 id="二、这个定理也有三个前提。"><a href="#二、这个定理也有三个前提。" class="headerlink" title="二、这个定理也有三个前提。"></a>二、这个定理也有三个前提。</h2><blockquote><ol><li>投资人是理性的（rational）</li><li>是风险规避者 （risk averse）</li><li>同质化</li></ol></blockquote><p><strong>什么是同质化?</strong></p><p>简单地说，同质化就是投资人都比较聪明，去选择有效边界内的点，且兴趣大多类似。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> CFA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>养老院观感</title>
+      <link href="/2019/12/04/yang-lao-yuan-guan-gan/"/>
+      <url>/2019/12/04/yang-lao-yuan-guan-gan/</url>
+      
+        <content type="html"><![CDATA[<p>由于做大创的项目和养老院有关，我与其他几位朋友来到了南京扬子养老院<a id="more"></a>，一所三星级（还是四星级？忘了）的养老院，里面设施什么的都不错。但是我想重点谈一下我遇见的三位“老人”。</p><h3 id="第一位老婆婆"><a href="#第一位老婆婆" class="headerlink" title="第一位老婆婆"></a>第一位老婆婆</h3><p>思路清晰，尽管没有从事跟教育有关的职业，但是一直保持着较高的精神追求。</p><p>他清楚志愿者带着任务来<strong>，所以有时候会假装装的很开心，让志愿者不要带着负担回去。</strong></p><p>这让我还是有些震撼的，她的觉悟已经高到了一定境界。</p><p>她让我抄一首诗给他,来了不能空手来，也不能空手回去。我就网上找了一首比较适合她的。</p><blockquote><p>《酬张少府》 </p><p>唐·王维</p><p>晚年唯好静，万事不关心。</p><p>自顾无长策，空知返归林。</p><p>松风吹解带，山月照弹琴。</p><p>君问穷通理，渔歌入浦深。</p></blockquote><h3 id="第二位老人"><a href="#第二位老人" class="headerlink" title="第二位老人"></a>第二位老人</h3><p>因为一场手术而卧病在床，照顾方式写着：防压疮。</p><p>喜好唱歌，精神矍铄，尽管他看起来很年轻不太适合这个词。</p><p>他为我们演唱了《隐形的翅膀》</p><blockquote><p>每一次 都在徘徊孤单中坚强<br>每一次 就算很受伤也不闪泪光<br>我知道 我一直有双隐形的翅膀<br>带我飞 飞过绝望<br>不去想 他们拥有美丽的太阳<br>我看见 每天的夕阳也会有变化<br>我知道 我一直有双隐形的翅膀<br>带我飞 给我希望<br>我终于 看到 所有梦想都开花<br>追逐的年轻 歌声多嘹亮<br>我终于 翱翔 用心凝望不害怕<br>哪里会有风 就飞多远吧<br>music….<br>不去想 他们拥有美丽的太阳<br>我看见 每天的夕阳也会有变化<br>我知道 我一直有双隐形的翅膀<br>带我飞 给我希望<br>我终于 看到 所有梦想都开花<br>追逐的年轻 歌声多嘹亮<br>我终于 翱翔 用心凝望不害怕<br>哪里会有风 就飞多远吧<br>隐形的翅膀 让梦恒久比天长<br>留一个愿望 让自己想象</p></blockquote><p>写这篇文章的时候想起来这是我第一首听的流行歌曲，当时在朋友家玩，夏天，空调，头戴耳机，千千静听。</p><p>当时真的少年的怀春，很喜欢张靓颖。</p><p>这种感觉不会再有了。</p><h3 id="一位我无法交谈的老人"><a href="#一位我无法交谈的老人" class="headerlink" title="一位我无法交谈的老人"></a>一位我无法交谈的老人</h3><p>一位癫痫病老人，十分慈眉善目，是我第一个交流的老人。</p><p>他只是坐在活动室里玩游戏，我看着他玩，他只会说 嗯 、不是这两个词。</p><p>他的眉毛长长的，却一点都不可怕，十分慈眉善目。</p><p>当我无法交谈的时候，我只好多拍拍他的肩，做一些类似于兄弟的仪式。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 所见所得 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>鱼跃</title>
+      <link href="/2019/12/04/yu-yue/"/>
+      <url>/2019/12/04/yu-yue/</url>
+      
+        <content type="html"><![CDATA[<p><em>三年前写的一个短篇小说，现在读来依然回味无穷。原来在新浪博客，现在慢慢搬运过来。来源于真实观察的一个案例。</em><a id="more"></a></p><p> &emsp;布满水痕的鱼店门口，几个洗澡盆横七竖八的摆放着。</p><p>  &emsp;洗澡盆里装着几条鱼，大的鱼一个盆里放三两条，中等个头的放五六条。</p><p>  &emsp;波澜平静中，鱼类正谋划一项起义。</p><p>&emsp; “不能再这么下去了，一条年长的老鱼说道，必须为我们的生存打开一条道路。”</p><p> &emsp; 是啊，在这里游来游去挤死了，还不如到外面发展。一条嫩鱼说。</p><p>  &emsp;“我想去外面找小红。”一条年轻力壮的鱼说道。</p><p> &emsp; 小红是他的配偶，前几天突然被人抓走了。</p><p>  &emsp;众鱼纷纷附和，用尾巴轻摆着他的身体，鼓励着他出去看看。</p><p> &emsp; “这样吧，我们一起推你，你借着水流的力跳出去看看。“</p><p> &emsp;  壮鱼应诺。</p><p>  &emsp;鱼儿们纷纷游过来，为这项盛事助威。</p><p>&emsp;“一、二、三，起！”</p><p>&emsp; 壮鱼果然不负众望，跃出水面二十多公分，水花四溅。众鱼瞪大了眼球往天上看。</p><p>   &emsp;他落入了另一个盆中。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 小说 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

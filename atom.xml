@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Saul&#39;s Space</title>
+  
+  <subtitle>偷懒学教授，艺术家，一级狡猾</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://saulnoble.github.io/"/>
+  <updated>2020-03-28T05:57:47.432Z</updated>
+  <id>https://saulnoble.github.io/</id>
+  
+  <author>
+    <name>八刀</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>latex教学</title>
+    <link href="https://saulnoble.github.io/2020/03/28/latex-jiao-xue/"/>
+    <id>https://saulnoble.github.io/2020/03/28/latex-jiao-xue/</id>
+    <published>2020-03-28T05:50:40.000Z</published>
+    <updated>2020-03-28T05:57:47.432Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;LateX作为常用的排版输入数学公式的工具，可以帮助提高效率。这个文档能帮助你快速解决一些问题。
+    
+    </summary>
+    
+    
+      <category term="latex" scheme="https://saulnoble.github.io/tags/latex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>教学的艺术</title>
+    <link href="https://saulnoble.github.io/2020/03/04/jiao-xue-de-yi-zhu/"/>
+    <id>https://saulnoble.github.io/2020/03/04/jiao-xue-de-yi-zhu/</id>
+    <published>2020-03-04T03:40:01.000Z</published>
+    <updated>2020-03-11T08:06:59.892Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不止是教师，每个人或多或少都有着一定的教学任务。比如父母教小孩子走路，骑自行车；小孩教父母用微信付钱，买理财产品；同学之间互相传道授业，这些都是教学的实践体现。以下，我为大家分享一些教学中的经验。&lt;/p&gt;
+&lt;p&gt;教学不止是教师的任务，每个人或多或少都有着一定的教学任务。比如父母教小孩子走路，骑自行车；小孩教父母用微信付钱，买理财产品；同学之间互相传道授业，这些都是教学的实践体现。以下，我为大家分享一些教学中的经验。
+    
+    </summary>
+    
+    
+      <category term="所思所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>伊藤引理的推导过程</title>
+    <link href="https://saulnoble.github.io/2020/02/28/yi-teng-yin-li-de-tui-dao-guo-cheng/"/>
+    <id>https://saulnoble.github.io/2020/02/28/yi-teng-yin-li-de-tui-dao-guo-cheng/</id>
+    <published>2020-02-28T04:05:04.000Z</published>
+    <updated>2020-03-09T12:19:57.822Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 伊藤引理帮助求解随机过程下函数的微分，其数学推导比较复杂。&lt;br&gt;应用于金融数学中的随机过程，尤其是BHM公式的推导。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="金融数学 随机过程" scheme="https://saulnoble.github.io/tags/%E9%87%91%E8%9E%8D%E6%95%B0%E5%AD%A6-%E9%9A%8F%E6%9C%BA%E8%BF%87%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我心目中最好看的十部电视剧</title>
+    <link href="https://saulnoble.github.io/2020/02/26/wo-xin-mu-zhong-zui-hao-kan-de-shi-bu-dian-shi-ju/"/>
+    <id>https://saulnoble.github.io/2020/02/26/wo-xin-mu-zhong-zui-hao-kan-de-shi-bu-dian-shi-ju/</id>
+    <published>2020-02-26T02:48:59.000Z</published>
+    <updated>2020-03-01T13:07:31.874Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为一个看的并不多的阅片机，借此机会，梳理一下我心目中的十大电视剧，涵盖世界各地的电视剧。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="所见所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生命诚可贵，没有下一句</title>
+    <link href="https://saulnoble.github.io/2020/02/04/sheng-ming-cheng-ke-gui-mei-you-xia-yi-ju/"/>
+    <id>https://saulnoble.github.io/2020/02/04/sheng-ming-cheng-ke-gui-mei-you-xia-yi-ju/</id>
+    <published>2020-02-04T07:12:22.000Z</published>
+    <updated>2020-02-26T03:24:43.419Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;常说生命诚可贵，某某价更高。但是没有生命，你还体会的到什么价值吗？&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="所思所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>全民遮眼</title>
+    <link href="https://saulnoble.github.io/2020/02/02/quan-min-zhe-yan/"/>
+    <id>https://saulnoble.github.io/2020/02/02/quan-min-zhe-yan/</id>
+    <published>2020-02-02T10:32:16.000Z</published>
+    <updated>2020-03-12T11:09:31.302Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;当小明在书桌前读着《 枪炮、病菌与钢铁》时，手机上的连续几则推送吸引了他的目光。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="小说" scheme="https://saulnoble.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>科比</title>
+    <link href="https://saulnoble.github.io/2020/01/31/ke-bi/"/>
+    <id>https://saulnoble.github.io/2020/01/31/ke-bi/</id>
+    <published>2020-01-31T05:49:17.000Z</published>
+    <updated>2020-02-02T10:55:55.017Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;科比是值得所有人了解的伟人。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="回忆" scheme="https://saulnoble.github.io/tags/%E5%9B%9E%E5%BF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>举国瞩目</title>
+    <link href="https://saulnoble.github.io/2020/01/30/ju-guo-zhu-mu/"/>
+    <id>https://saulnoble.github.io/2020/01/30/ju-guo-zhu-mu/</id>
+    <published>2020-01-30T11:47:41.000Z</published>
+    <updated>2020-01-30T11:49:05.850Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;17岁时写的一篇轻小说，原载于我的新浪博客，现在慢慢搬运过来。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="小说" scheme="https://saulnoble.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论职业的特殊性</title>
+    <link href="https://saulnoble.github.io/2020/01/28/lun-zhi-ye-de-te-shu-xing/"/>
+    <id>https://saulnoble.github.io/2020/01/28/lun-zhi-ye-de-te-shu-xing/</id>
+    <published>2020-01-28T13:42:49.000Z</published>
+    <updated>2020-01-28T13:50:46.895Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我一直认为，职业是有区分的。&lt;br&gt;有些职业，属于特殊职业，从业人员应该具有极高的使命感与责任感。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="所思所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E6%80%9D%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一些经典学科的经典教材</title>
+    <link href="https://saulnoble.github.io/2020/01/10/tui-jian-yi-xie-jing-dian-xue-ke-de-jing-dian-jiao-cai/"/>
+    <id>https://saulnoble.github.io/2020/01/10/tui-jian-yi-xie-jing-dian-xue-ke-de-jing-dian-jiao-cai/</id>
+    <published>2020-01-10T05:01:31.000Z</published>
+    <updated>2020-02-25T13:07:05.632Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很久之前就想写了，但没有什么时间。现在给大家推荐一些重要学科的经典教材。&lt;/p&gt;
+&lt;p&gt;以下数学类科目仅针对非数学专业使用，数学专业请不要对号入座。&lt;/p&gt;
+&lt;p&gt;看书的效率比看网课更高，除非是顶尖的网课或者较垃圾的书。这个在编程随想的博客中也提到过。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="好物分享" scheme="https://saulnoble.github.io/tags/%E5%A5%BD%E7%89%A9%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扔掉有色眼镜</title>
+    <link href="https://saulnoble.github.io/2020/01/04/reng-diao-you-se-yan-jing/"/>
+    <id>https://saulnoble.github.io/2020/01/04/reng-diao-you-se-yan-jing/</id>
+    <published>2020-01-04T01:03:19.000Z</published>
+    <updated>2020-01-04T04:22:51.130Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;CFA的一门专业课《Corporate Finance》结束了，期末考很难，但考的还行。&lt;/p&gt;
+&lt;p&gt;不过我想谈谈有色眼镜的问题。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="所见所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学：解读Eviews回归结果（下）</title>
+    <link href="https://saulnoble.github.io/2019/12/24/jie-du-eviews-hui-gui-jie-guo-xia/"/>
+    <id>https://saulnoble.github.io/2019/12/24/jie-du-eviews-hui-gui-jie-guo-xia/</id>
+    <published>2019-12-24T11:49:47.000Z</published>
+    <updated>2020-02-29T02:04:29.891Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;解读Eviews回归结果（下）终于出现了，这次的讲解更贴近于考试使用。&lt;/p&gt;
+&lt;p&gt;如果你还没有读过上集，可以先观看&lt;a href=&quot;https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/&quot;&gt;计量经济学：解读Eviews回归结果（上）&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学中几个常见的证明</title>
+    <link href="https://saulnoble.github.io/2019/12/22/ji-liang-jing-ji-xue-zhong-ji-ge-chang-jian-de-zheng-ming/"/>
+    <id>https://saulnoble.github.io/2019/12/22/ji-liang-jing-ji-xue-zhong-ji-ge-chang-jian-de-zheng-ming/</id>
+    <published>2019-12-22T13:18:21.000Z</published>
+    <updated>2020-01-02T01:28:22.225Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;持续更新中…
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用python计算身份证校验码</title>
+    <link href="https://saulnoble.github.io/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/"/>
+    <id>https://saulnoble.github.io/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/</id>
+    <published>2019-12-22T07:37:34.000Z</published>
+    <updated>2019-12-22T11:14:44.737Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;传统的身份证一共18位，其中最后一位是验证码。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="https://saulnoble.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学知识串讲(1)</title>
+    <link href="https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/"/>
+    <id>https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/</id>
+    <published>2019-12-21T03:42:19.000Z</published>
+    <updated>2019-12-23T14:07:49.460Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;补充一些令人疑惑的概念。
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>父母心</title>
+    <link href="https://saulnoble.github.io/2019/12/19/fu-mu-xin/"/>
+    <id>https://saulnoble.github.io/2019/12/19/fu-mu-xin/</id>
+    <published>2019-12-19T11:58:14.000Z</published>
+    <updated>2019-12-23T13:57:30.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;两件事，一条心。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="所见所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学：解读Eviews回归结果（上）</title>
+    <link href="https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/"/>
+    <id>https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/</id>
+    <published>2019-12-16T13:22:47.000Z</published>
+    <updated>2020-01-02T01:29:56.428Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;解读一下eviews里面回归结果的意义与关系，分上下两集。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学若干判断题的解答</title>
+    <link href="https://saulnoble.github.io/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/"/>
+    <id>https://saulnoble.github.io/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/</id>
+    <published>2019-12-14T12:43:50.000Z</published>
+    <updated>2019-12-23T14:08:01.186Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;持续更新中…
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>乖巧的悖论</title>
+    <link href="https://saulnoble.github.io/2019/12/13/guai-qiao-de-bei-lun/"/>
+    <id>https://saulnoble.github.io/2019/12/13/guai-qiao-de-bei-lun/</id>
+    <published>2019-12-13T12:29:08.000Z</published>
+    <updated>2019-12-22T11:18:01.192Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个我提出的鬼畜思想，仅供笑话。。
+    
+    </summary>
+    
+    
+      <category term="思考" scheme="https://saulnoble.github.io/tags/%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计量经济学：自相关，共线性，异方差总结</title>
+    <link href="https://saulnoble.github.io/2019/12/12/ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie-hexo-new-ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie/"/>
+    <id>https://saulnoble.github.io/2019/12/12/ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie-hexo-new-ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie/</id>
+    <published>2019-12-12T10:43:16.000Z</published>
+    <updated>2020-02-04T07:17:29.190Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+</feed>

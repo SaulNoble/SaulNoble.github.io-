@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="八刀">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="八刀">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="南京审计大学 | CFA | Artist">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>latex教学 · Saul&#39;s Space</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href="/assets/favicon.ico">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js" as="script">
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Saul&#39;s Space</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">latex教学</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>Saul's Space</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            latex教学
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "latex">latex</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">874</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/03/28</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>LateX作为常用的排版输入数学公式的工具，可以帮助提高效率。这个文档能帮助你快速解决一些问题。 <a id="more"></a></p>
+<h1 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h1><p>在开始简单的学习之前，几条如下的法则可以帮助你减少一些弯路。 </p>
+<p><strong>第一：</strong></p>
+<blockquote>
+<p>如果是特殊符号，我们需要反斜杠来表示，比如a可以用键盘打出来，而圆周率就需要用\pi表示。</p>
+</blockquote>
+<p><strong>第二：</strong></p>
+<blockquote>
+<p>我们使用＄来框住数学符号,也可是$$,分别代表行内和行间公式。</p>
+</blockquote>
+<h1 id="数学"><a href="#数学" class="headerlink" title="数学"></a>数学</h1><h2 id="行内公式，行间公式"><a href="#行内公式，行间公式" class="headerlink" title="行内公式，行间公式"></a>行内公式，行间公式</h2><p>（1）要输入类似$a+b$的行内数学公式，你可以使用</p>
+<pre><code class="latex">$a+b$</code></pre>
+<p>（ 2）如果要输入这样的行间公式<br>$$<br>e^{i\pi}+1=0<br>$$<br>你就需要</p>
+<pre><code class="latex">$$
+e^{i\pi}+1=0
+$$</code></pre>
+<p>或者</p>
+<pre><code class="latex">$$e^{i\pi}+1=0$$</code></pre>
+<p>两者并没有什么区别，主要是前一种更方便修改。 你可能暂时看不懂的Latex表达方式，<strong>这并没有关系</strong>，下面我们来识记几个常见的Latex数学符号。</p>
+<h2 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h2><h3 id="上标与下标"><a href="#上标与下标" class="headerlink" title="上标与下标"></a>上标与下标</h3><p>上标的符号是,比如$e^2$的行间公式就可以使用</p>
+<pre><code class="latex">$e^2$ 或者 $e^{2}$</code></pre>
+<p>下标的符号是_,比如$x_{1}$的表达方式就是</p>
+<pre><code class="latex">$x_1$ 或者 $x_{1}$</code></pre>
+<h3 id="分数"><a href="#分数" class="headerlink" title="分数"></a>分数</h3><pre><code class="latex">\frac{}{}</code></pre>
+<p>比如 $\frac{|f(b)-f(a)|}{(b-a)^{2}}$就可以通过</p>
+<pre><code class="latex">$\frac{|f(b)-f(a)|}{(b-a)^{2}}$</code></pre>
+<p>来表达。</p>
+<h3 id="根号"><a href="#根号" class="headerlink" title="根号"></a>根号</h3><pre><code class="latex">\sqrt[开方次数，如不写默认为2]{根号里面的数}</code></pre>
+<p>比如</p>
+<pre><code>\sqrt[3]{x^4}+\sqrt{\frac{x^2}{y}}</code></pre><p>$$\sqrt[3]{x^4}+\sqrt{\frac{x^2}{y}}$$</p>
+<h2 id="其他常用符号"><a href="#其他常用符号" class="headerlink" title="其他常用符号"></a>其他常用符号</h2><table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th align="left">Latex语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">·</td>
+<td align="left">\cdot</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\tbinom{n}{m} or</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">C_{n}^{m}</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\geq</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\leq</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\sum</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\int</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\lim</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\infty</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\because</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\therefore</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\vec{a}</td>
+</tr>
+</tbody></table>
+<h2 id="微积分几大天王"><a href="#微积分几大天王" class="headerlink" title="微积分几大天王"></a>微积分几大天王</h2><pre><code class="latex">$\sum_{i=0}^n \frac{1}{i^2}$ 
+$\prod_{i=0}^n \frac{1}{i^2}$ 
+$\int_0^1 x^2  dx$ 
+$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$
+</code></pre>
+<p>$\sum_{i=0}^n \frac{1}{i^2}$ </p>
+<p>$\prod_{i=0}^n \frac{1}{i^2}$<br>$\int_0^1 x^2  dx$<br>$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$</p>
+<h2 id="字体格式"><a href="#字体格式" class="headerlink" title="字体格式"></a>字体格式</h2><pre><code>\emph{这是斜体}
+\textbf{这是粗体}</code></pre><h2 id="空格怎么打？"><a href="#空格怎么打？" class="headerlink" title="空格怎么打？"></a>空格怎么打？</h2><table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th align="left">Latex语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td align="left">a\ b(<strong>注：反斜杠后面需要空开一格</strong>)</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">a!b</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">a\quad b</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">a\ ; b</td>
+</tr>
+</tbody></table>
+<h2 id="一些特殊字母"><a href="#一些特殊字母" class="headerlink" title="一些特殊字母"></a>一些特殊字母</h2><table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th align="left">Latex语言</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td align="left">\alpha</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\beta</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\gamma</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\mu</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\lambda</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left">\xi</td>
+</tr>
+</tbody></table>
+<h2 id="特殊环境"><a href="#特殊环境" class="headerlink" title="特殊环境"></a>特殊环境</h2><h3 id="对齐环境"><a href="#对齐环境" class="headerlink" title="对齐环境"></a>对齐环境</h3><pre><code class="latex">$$ 
+\begin{aligned} 
+x =&amp; a+b+c \\
+= &amp;d+e+f+g 
+\end{aligned} 
+$$</code></pre>
+<h1 id="如何使用latex插图"><a href="#如何使用latex插图" class="headerlink" title="如何使用latex插图"></a>如何使用latex插图</h1><h2 id="单图"><a href="#单图" class="headerlink" title="单图"></a>单图</h2><pre><code class="latex">\begin{figure}[h] %---插入图片---  
+\small  
+\centering  
+\includegraphics[width=0.6\textwidth]{s.png}  
+\caption{Definition} \label{pic1} %---
+\end{figure}</code></pre>
+<h2 id="多图"><a href="#多图" class="headerlink" title="多图"></a>多图</h2><pre><code class="latex">\begin{figure}
+    \centering
+    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}} 
+    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}} 
+    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}
+    \subfigure[]{\includegraphics[width=0.24\textwidth]{monalisa.jpg}}
+    \caption{(a) blah (b) blah (c) blah (d) blah}
+    \label{fig:foobar}
+\end{figure}</code></pre>
+<h1 id="如何插入灰白相间的表格"><a href="#如何插入灰白相间的表格" class="headerlink" title="如何插入灰白相间的表格"></a>如何插入灰白相间的表格</h1><p>使用命令：</p>
+<blockquote>
+<p>\rowcolor[gray]{.95}  </p>
+</blockquote>
+<pre><code class="latex">\begin{table}[h] %---开始表格---  
+\caption{Symbols mentioned in this paper}\label{tab:001}  
+\centering  
+\begin{tabular}{lll}  
+\toprule[1.2pt] %%%---表头高度----  
+\bf{Symbols} &amp; \bf{Description}\\ %-----一共三列----  
+\midrule[1pt] %%%---上横线线粗----  
+\rowcolor[gray]{.95}  
+$F$ &amp; Customer  level.\\  
+$Q_{1}$ &amp; Ratings\\ \rowcolor[gray]{.95}  
+\bottomrule[1.5pt] %%%---下横线线粗----  
+\end{tabular}  
+\end{table}</code></pre>
+<h1 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h1><p>需要生成目录与段落，首先输入显示目录命令，其次输入段落。</p>
+<pre><code class="latex">\tableofcontents
+\section{Dream}
+\subsection{section1}
+\subsubsection*{conclusion}
+% *代表不编号</code></pre>
+<h1 id="使用中文"><a href="#使用中文" class="headerlink" title="使用中文"></a>使用中文</h1><p>如果你的文章主要由中文构成，你可以考虑使用 CTeX 中的  <code>ctexart</code>  文档类，下面的例子展示了如何使用  <code>ctexart</code>  文档类来写中文文档：</p>
+<pre><code class="latex">\documentclass[UTF8]{ctexart}
+\begin{document}
+你好，这是一个测试文档。
+\end{document}</code></pre>
+<p>使用  <code>ctexart</code>  documentclass 时候，最好加上  <code>\usepackage[T1]{fontenc}</code>，否则[某些符号显示不正确</p>
+<pre><code>\usepackage[UTF8]{ctex}</code></pre>
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://saulnoble.github.io">八刀</a>
+            <p>原文链接：<a href="https://saulnoble.github.io/2020/03/28/latex-jiao-xue/">https://saulnoble.github.io/2020/03/28/latex-jiao-xue/</a>
+            <p>发表日期：<a href="https://saulnoble.github.io/2020/03/28/latex-jiao-xue/">三月 28日 2020, 1:50:40 下午</a>
+            <p>更新日期：<a href="https://saulnoble.github.io/2020/03/28/latex-jiao-xue/">March 28th 2020, 1:57:47 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/03/04/jiao-xue-de-yi-zhu/" title= "教学的艺术">
+                    <div class="prevTitle">教学的艺术</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+    
+        
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
+      </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+            tex2jax: {
+              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            }
+          });
+      </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+              var all = MathJax.Hub.getAllJax(), i;
+              for(i=0; i < all.length; i += 1) {
+                  all[i].SourceElement().parentNode.className += ' has-jax';
+              }
+          });
+      </script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:sauliuonline@gmail.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="/github.com/saulnoble" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+            
+                <a href="https://t.me/saulnoble" class="iconfont-archer telegram" target="_blank" title=telegram></a>
+            
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://www.douban.com/people/63065815/" class="iconfont-archer douban" target="_blank" title=douban></a>
+            
+        
+    
+        
+    
+        
+            
+                <a href="https://twitter.com/SaulWester" class="iconfont-archer twitter" target="_blank" title=twitter></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#原则"><span class="toc-number">1.</span> <span class="toc-text">原则</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数学"><span class="toc-number">2.</span> <span class="toc-text">数学</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#行内公式，行间公式"><span class="toc-number">2.1.</span> <span class="toc-text">行内公式，行间公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数学符号"><span class="toc-number">2.2.</span> <span class="toc-text">数学符号</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#上标与下标"><span class="toc-number">2.2.1.</span> <span class="toc-text">上标与下标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分数"><span class="toc-number">2.2.2.</span> <span class="toc-text">分数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#根号"><span class="toc-number">2.2.3.</span> <span class="toc-text">根号</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他常用符号"><span class="toc-number">2.3.</span> <span class="toc-text">其他常用符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#微积分几大天王"><span class="toc-number">2.4.</span> <span class="toc-text">微积分几大天王</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体格式"><span class="toc-number">2.5.</span> <span class="toc-text">字体格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#空格怎么打？"><span class="toc-number">2.6.</span> <span class="toc-text">空格怎么打？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些特殊字母"><span class="toc-number">2.7.</span> <span class="toc-text">一些特殊字母</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊环境"><span class="toc-number">2.8.</span> <span class="toc-text">特殊环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#对齐环境"><span class="toc-number">2.8.1.</span> <span class="toc-text">对齐环境</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如何使用latex插图"><span class="toc-number">3.</span> <span class="toc-text">如何使用latex插图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#单图"><span class="toc-number">3.1.</span> <span class="toc-text">单图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多图"><span class="toc-number">3.2.</span> <span class="toc-text">多图</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如何插入灰白相间的表格"><span class="toc-number">4.</span> <span class="toc-text">如何插入灰白相间的表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#段落"><span class="toc-number">5.</span> <span class="toc-text">段落</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用中文"><span class="toc-number">6.</span> <span class="toc-text">使用中文</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 25
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/28</span><a class="archive-post-title" href= "/2020/03/28/latex-jiao-xue/" >latex教学</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/jiao-xue-de-yi-zhu/" >教学的艺术</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2020/02/28/yi-teng-yin-li-de-tui-dao-guo-cheng/" >伊藤引理的推导过程</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/26</span><a class="archive-post-title" href= "/2020/02/26/wo-xin-mu-zhong-zui-hao-kan-de-shi-bu-dian-shi-ju/" >我心目中最好看的十部电视剧</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/04</span><a class="archive-post-title" href= "/2020/02/04/sheng-ming-cheng-ke-gui-mei-you-xia-yi-ju/" >生命诚可贵，没有下一句</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/02</span><a class="archive-post-title" href= "/2020/02/02/quan-min-zhe-yan/" >全民遮眼</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/31</span><a class="archive-post-title" href= "/2020/01/31/ke-bi/" >科比</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/30</span><a class="archive-post-title" href= "/2020/01/30/ju-guo-zhu-mu/" >举国瞩目</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/28</span><a class="archive-post-title" href= "/2020/01/28/lun-zhi-ye-de-te-shu-xing/" >论职业的特殊性</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/10</span><a class="archive-post-title" href= "/2020/01/10/tui-jian-yi-xie-jing-dian-xue-ke-de-jing-dian-jiao-cai/" >推荐一些经典学科的经典教材</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/04</span><a class="archive-post-title" href= "/2020/01/04/reng-diao-you-se-yan-jing/" >扔掉有色眼镜</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/24</span><a class="archive-post-title" href= "/2019/12/24/jie-du-eviews-hui-gui-jie-guo-xia/" >计量经济学：解读Eviews回归结果（下）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/22</span><a class="archive-post-title" href= "/2019/12/22/ji-liang-jing-ji-xue-zhong-ji-ge-chang-jian-de-zheng-ming/" >计量经济学中几个常见的证明</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/22</span><a class="archive-post-title" href= "/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/" >利用python计算身份证校验码</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/21</span><a class="archive-post-title" href= "/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/" >计量经济学知识串讲(1)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/19</span><a class="archive-post-title" href= "/2019/12/19/fu-mu-xin/" >父母心</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/16</span><a class="archive-post-title" href= "/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/" >计量经济学：解读Eviews回归结果（上）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/14</span><a class="archive-post-title" href= "/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/" >计量经济学若干判断题的解答</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/13</span><a class="archive-post-title" href= "/2019/12/13/guai-qiao-de-bei-lun/" >乖巧的悖论</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/12</span><a class="archive-post-title" href= "/2019/12/12/ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie-hexo-new-ji-liang-jing-ji-xue-zi-xiang-guan-gong-xian-xing-yi-fang-chai-zong-jie/" >计量经济学：自相关，共线性，异方差总结</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/11</span><a class="archive-post-title" href= "/2019/12/11/li-yong-python-zuo-jin-rong-fen-xi-1/" >利用python做金融分析（1）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/07</span><a class="archive-post-title" href= "/2019/12/07/are-we-better-off/" >Are we better off?（我们生活比以前更好了吗）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/05</span><a class="archive-post-title" href= "/2019/12/05/liang-ji-jin-fen-chi-ding-li-two-fund-theorem/" >两基金分离定理（Two-fund theorem）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2019/12/04/yang-lao-yuan-guan-gan/" >养老院观感</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/2019/12/04/yu-yue/" >鱼跃</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="思考"><span class="iconfont-archer">&#xe606;</span>思考</span>
+    
+        <span class="sidebar-tag-name" data-tags="latex"><span class="iconfont-archer">&#xe606;</span>latex</span>
+    
+        <span class="sidebar-tag-name" data-tags="小说"><span class="iconfont-archer">&#xe606;</span>小说</span>
+    
+        <span class="sidebar-tag-name" data-tags="CFA"><span class="iconfont-archer">&#xe606;</span>CFA</span>
+    
+        <span class="sidebar-tag-name" data-tags="金融数学 随机过程"><span class="iconfont-archer">&#xe606;</span>金融数学 随机过程</span>
+    
+        <span class="sidebar-tag-name" data-tags="所见所得"><span class="iconfont-archer">&#xe606;</span>所见所得</span>
+    
+        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
+    
+        <span class="sidebar-tag-name" data-tags="所见所想"><span class="iconfont-archer">&#xe606;</span>所见所想</span>
+    
+        <span class="sidebar-tag-name" data-tags="好物分享"><span class="iconfont-archer">&#xe606;</span>好物分享</span>
+    
+        <span class="sidebar-tag-name" data-tags="所思所想"><span class="iconfont-archer">&#xe606;</span>所思所想</span>
+    
+        <span class="sidebar-tag-name" data-tags="回忆"><span class="iconfont-archer">&#xe606;</span>回忆</span>
+    
+        <span class="sidebar-tag-name" data-tags="计量经济学"><span class="iconfont-archer">&#xe606;</span>计量经济学</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "八刀"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
