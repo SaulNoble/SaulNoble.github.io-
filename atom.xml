@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://saulnoble.github.io/"/>
-  <updated>2021-02-07T14:24:56.832Z</updated>
+  <updated>2021-03-19T10:09:48.434Z</updated>
   <id>https://saulnoble.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>书店疯子</title>
+    <link href="https://saulnoble.github.io/2021/03/19/shu-dian-feng-zi/"/>
+    <id>https://saulnoble.github.io/2021/03/19/shu-dian-feng-zi/</id>
+    <published>2021-03-19T10:07:34.000Z</published>
+    <updated>2021-03-19T10:09:48.434Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/03/19/SLZoGkUwchpEAM8.png&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="小说" scheme="https://saulnoble.github.io/categories/%E5%B0%8F%E8%AF%B4/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>重生</title>
@@ -355,24 +379,6 @@
     <summary type="html">
     
       &lt;p&gt;解读一下eviews里面回归结果的意义与关系，分上下两集。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计量经济学若干判断题的解答</title>
-    <link href="https://saulnoble.github.io/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/"/>
-    <id>https://saulnoble.github.io/2019/12/14/ji-liang-jing-ji-xue-ruo-gan-pan-duan-ti-de-jie-da/</id>
-    <published>2019-12-14T12:43:50.000Z</published>
-    <updated>2019-12-23T14:08:01.186Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;持续更新中…
     
     </summary>
     
