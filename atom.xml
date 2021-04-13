@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://saulnoble.github.io/"/>
-  <updated>2021-03-19T10:13:33.041Z</updated>
+  <updated>2021-04-13T05:55:08.443Z</updated>
   <id>https://saulnoble.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>看似你赚了，实则你亏了</title>
+    <link href="https://saulnoble.github.io/2021/04/13/kan-si-ni-zhuan-liao-shi-ze-ni-yu-liao/"/>
+    <id>https://saulnoble.github.io/2021/04/13/kan-si-ni-zhuan-liao-shi-ze-ni-yu-liao/</id>
+    <published>2021-04-13T05:54:24.000Z</published>
+    <updated>2021-04-13T05:55:08.443Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;生活中有许多事，有短的效益，与长远的效益，人生就是在不断的做选择，在损失与增益中权衡，在痛苦与欢乐中游走。这方面会计记账表似乎是有一定的意义的，将加与减分的明明白白，一个加了必然带来一个减法。做加法与做减法，在各种事情中都得到体现。&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="思考" scheme="https://saulnoble.github.io/categories/%E6%80%9D%E8%80%83/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>书店疯子</title>
@@ -360,24 +385,6 @@
     
     
       <category term="所见所想" scheme="https://saulnoble.github.io/tags/%E6%89%80%E8%A7%81%E6%89%80%E6%83%B3/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计量经济学：解读Eviews回归结果（上）</title>
-    <link href="https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/"/>
-    <id>https://saulnoble.github.io/2019/12/16/ji-liang-jing-ji-xue-jie-du-eviewwws-hui-gui-jie-guo-shang/</id>
-    <published>2019-12-16T13:22:47.000Z</published>
-    <updated>2020-01-02T01:29:56.428Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;解读一下eviews里面回归结果的意义与关系，分上下两集。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
     
   </entry>
   
