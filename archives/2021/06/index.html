@@ -23,7 +23,7 @@
     <meta name="description" content="南京审计大学 | CFA | Artist">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>计量经济学知识串讲(1) · Saul&#39;s Space</title>
+    <title>Saul&#39;s Space</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -204,23 +204,12 @@
 <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >Saul&#39;s Space</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">计量经济学知识串讲(1)</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>Saul's Space</a>
 </header>
@@ -232,74 +221,24 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-            计量经济学知识串讲(1)
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "计量经济学">计量经济学</a>
-    
-</div>
-                
-                
-                    <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">720</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/12/21</span>
-                    
-                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                        <span class="iconfont-archer">&#xe602;</span>
-                        <span id="busuanzi_value_page_pv"></span>
-                    </span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -400,111 +339,38 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <p>补充一些令人疑惑的概念。<a id="more"></a></p>
-<h2 id="遗漏变量和加进无关变量的模型，对模型的影响分别是什么？"><a href="#遗漏变量和加进无关变量的模型，对模型的影响分别是什么？" class="headerlink" title="遗漏变量和加进无关变量的模型，对模型的影响分别是什么？"></a>遗漏变量和加进无关变量的模型，对模型的影响分别是什么？</h2><p>先下结论：</p>
-<p>（1）遗漏模型中本该有的变量，损失的是<strong>无偏性和一致性</strong>；</p>
-<p>（2）加进模型中不应该有的变量，其损失的只有<strong>有效性</strong>。</p>
-<p>  具体解释一下，第一：模型中<strong>遗漏重要解释变量</strong>的不良后果比模型中引入无关解释变量的<strong>后果要严重得多</strong>。遗漏了重要解释变量的模型是一个错误的不可用的模型，而引进了无关解释变量的模型是一个精度不高、但仍具一定利用价值的模型。应力求避免模型对重要解释变量的遗漏，</p>
-<p>第二：虽然在模型引进无关解释变量的不良后果相对较小，但不能认为在模型中包含无关解释变量是可以容忍的。事实上，如果出现这种情况，会造成模型参数估计量精确度下降，还会引发解释变量的<strong>多重共线性</strong>问题，以及造成自由度的损失。</p>
-<h2 id="虚拟变量"><a href="#虚拟变量" class="headerlink" title="虚拟变量"></a>虚拟变量</h2><h4 id="应该引入几个虚拟变量？"><a href="#应该引入几个虚拟变量？" class="headerlink" title="应该引入几个虚拟变量？"></a>应该引入几个虚拟变量？</h4><p>(1) 一个因素多个属性。若定性因素有m 个不同属性或相互排斥的类型，在模型中则只能引入$m-1$ 个虚拟变量，否则会产生<strong>完全多重共线性。</strong></p>
-<blockquote>
-<p>例子：一年四个季度，引入3个虚拟变量</p>
-</blockquote>
-<p>(2) 多个因素各两种属性。如果有$m$个定性因素，且每个因素各有两个不同的属性类<br>型，则引入$m-1$ 个虚拟变量。</p>
-<p><strong>一个例子：</strong></p>
-<p><img src="https://i.loli.net/2019/12/21/wKhR6VlcnNkvT97.png" alt></p>
-<h3 id="两种设定形式：加法与乘法"><a href="#两种设定形式：加法与乘法" class="headerlink" title="两种设定形式：加法与乘法"></a>两种设定形式：加法与乘法</h3><p>（1）加法类型。</p>
-<p>在模型中，将<strong>虚拟解释变量作为新一项</strong>，以达到其调整<strong>截距</strong>的目的，然后比较有无前后虚拟变量<strong>截距的差距</strong>来看虚拟变量的影响/</p>
-<hr>
-<p><img src="https://i.loli.net/2019/12/21/Fj4M9ePAJTXzYk8.png" alt></p>
-<p>（2）乘法类型。</p>
-<p>模型中，将<strong>虚拟解释变量与其他解释变量相乘</strong>，作为新的解释变量出现在模型中，以达到其调整设定模型<strong>斜率系数</strong>的目的。<br>乘法形式引入虚拟解释变量的主要作用在于：</p>
-<p>①两个回归模型之间的比较</p>
-<p><strong>②因素之间的交互影响分析</strong></p>
-<p>③提高模型对现实经济现象的描述精度</p>
-<p><strong>举个例子：</strong></p>
-<p><img src="http://ww1.sinaimg.cn/large/007DGvPCgy1ga46oyn540j30oi0gdgpp.jpg" alt="1576492161318.png"></p>
-<h2 id="举出时间序列，截面数据，面板数据的例子"><a href="#举出时间序列，截面数据，面板数据的例子" class="headerlink" title="举出时间序列，截面数据，面板数据的例子"></a>举出时间序列，截面数据，面板数据的例子</h2><h3 id="截面数据："><a href="#截面数据：" class="headerlink" title="截面数据："></a>截面数据：</h3><p><img src="https://qph.fs.quoracdn.net/main-qimg-7beac886a9cd47c5ba4324dfd36dc2f6.webp" alt="img"></p>
-<h3 id="时间序列："><a href="#时间序列：" class="headerlink" title="时间序列："></a>时间序列：</h3><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga2wq0ao7wj30cx03h0sp.jpg" alt="undefined"></p>
-<h3 id="面板数据"><a href="#面板数据" class="headerlink" title="面板数据"></a>面板数据</h3><p><img src="http://ww1.sinaimg.cn/large/007DGvPCly1ga2wqh7z3xj30cw06v3ys.jpg" alt="undefined"></p>
-<p>之前在做这个作业的时候我写了不同事物的例子，今天在Quora上看到这个<a href="https://www.quora.com/What-is-the-difference-between-panel-data-time-serial-data-and-cross-sectional-data" target="_blank" rel="noopener">回答</a>，特意搬运过来。深感这样才是<strong>正确举例子的办法</strong>。不光老师，学生应该也要学会这样举例子。</p>
-
-    </article>
-    <!-- license  -->
+            <main class="main index-page">
     
-        <div class="license-wrapper">
-            <p>原文作者：<a href="https://saulnoble.github.io">八刀</a>
-            <p>原文链接：<a href="https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/">https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/</a>
-            <p>发表日期：<a href="https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/">十二月 21日 2019, 11:42:19 中午</a>
-            <p>更新日期：<a href="https://saulnoble.github.io/2019/12/21/ji-liang-jing-ji-xue-zhi-shi-chuan-jiang-1/">January 3rd 2021, 11:10:59 am</a>
-            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2021/06/14/circumstance-issues/" >
+            
+                <span>Circumstance issues</span>
+        </a>
+        <div class="abstract-content">
+            <p>人的一生都在受环境影响
         </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/06/14</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "思考">思考</a>
+    
+</div>
+            
+        </div>
+    </article>
     
     <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/" title= "利用python计算身份证校验码">
-                    <div class="nextTitle">利用python计算身份证校验码</div>
-                </a>
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/12/19/fu-mu-xin/" title= "父母心">
-                    <div class="prevTitle">父母心</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
-    
-    
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
-    
-        
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-          tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            processEscapes: true
-          }
-        });
-      </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-            tex2jax: {
-              skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-            }
-          });
-      </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-              var all = MathJax.Hub.getAllJax(), i;
-              for(i=0; i < all.length; i += 1) {
-                  all[i].SourceElement().parentNode.className += ' has-jax';
-              }
-          });
-      </script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
     
 </main>
             <!-- profile -->
@@ -589,24 +455,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#遗漏变量和加进无关变量的模型，对模型的影响分别是什么？"><span class="toc-number">1.</span> <span class="toc-text">遗漏变量和加进无关变量的模型，对模型的影响分别是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#虚拟变量"><span class="toc-number">2.</span> <span class="toc-text">虚拟变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#应该引入几个虚拟变量？"><span class="toc-number">2.0.1.</span> <span class="toc-text">应该引入几个虚拟变量？</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#两种设定形式：加法与乘法"><span class="toc-number">2.1.</span> <span class="toc-text">两种设定形式：加法与乘法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#举出时间序列，截面数据，面板数据的例子"><span class="toc-number">3.</span> <span class="toc-text">举出时间序列，截面数据，面板数据的例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#截面数据："><span class="toc-number">3.1.</span> <span class="toc-text">截面数据：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#时间序列："><span class="toc-number">3.2.</span> <span class="toc-text">时间序列：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面板数据"><span class="toc-number">3.3.</span> <span class="toc-text">面板数据</span></a></li></ol></li></ol>
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1276,8 +1124,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
