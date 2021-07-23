@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://saulnoble.github.io/"/>
-  <updated>2021-06-14T00:29:47.807Z</updated>
+  <updated>2021-07-23T11:19:56.928Z</updated>
   <id>https://saulnoble.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>印象最深的影视剧台词</title>
+    <link href="https://saulnoble.github.io/2021/07/23/yin-xiang-zui-shen-de-ying-shi-ju-tai-ci/"/>
+    <id>https://saulnoble.github.io/2021/07/23/yin-xiang-zui-shen-de-ying-shi-ju-tai-ci/</id>
+    <published>2021-07-23T11:18:42.000Z</published>
+    <updated>2021-07-23T11:19:56.928Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 一句好台词就是神来之笔。
+    
+    </summary>
+    
+      <category term="观影" scheme="https://saulnoble.github.io/categories/%E8%A7%82%E5%BD%B1/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Circumstance issues</title>
@@ -364,24 +382,6 @@
     
     
       <category term="计量经济学" scheme="https://saulnoble.github.io/tags/%E8%AE%A1%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用python计算身份证校验码</title>
-    <link href="https://saulnoble.github.io/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/"/>
-    <id>https://saulnoble.github.io/2019/12/22/li-yong-python-ji-suan-shen-fen-zheng-xiao-yan-ma/</id>
-    <published>2019-12-22T07:37:34.000Z</published>
-    <updated>2019-12-22T11:14:44.737Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;传统的身份证一共18位，其中最后一位是验证码。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="python" scheme="https://saulnoble.github.io/tags/python/"/>
     
   </entry>
   
